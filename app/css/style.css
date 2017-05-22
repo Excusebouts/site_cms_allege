@@ -65,6 +65,10 @@
 
 /* Header */
 
+#menu-0::selection {
+  background: #f1f1f1;
+}
+
 #menu-0 section {
   padding: 0;
 }
@@ -77,6 +81,8 @@
 #menu-0 .navbar {
   padding: 0;
   margin: 0;
+  border-width: 0;
+  line-height: 50px;
 }
 
 #menu-0 .navbar.navbar-short {
@@ -84,12 +90,12 @@
 }
 
 #menu-0 .dropdown-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background: #f1f1f1;
 }
 
 #menu-0 .nav>li>a:focus,
 .nav>li>a:hover {
-  background-color: #3a3a3a;
+  background-color: #f1f1f1;
 }
 
 #menu-0 .navbar {
@@ -108,7 +114,7 @@
 #menu-0 .nav .open>a,
 .nav .open>a:focus,
 .nav .open>a:hover {
-  border-color: rgba(255, 255, 255, 0.1);
+  background: #f1f1f1;
 }
 
 #menu-0 .nav-link {
@@ -120,26 +126,27 @@
   height: auto;
 }
 
-#menu-0 .navbar-caption {
-  color: #ffffff;
-}
-
+#menu-0 .navbar-caption,
 #menu-0 .navbar-toggler {
-  color: #ffffff;
+  color: #000;
 }
 
 #menu-0 .close-icon::before,
 #menu-0 .close-icon::after {
-  background-color: #ffffff;
+  background-color: #000;
 }
 
 #menu-0 .link,
 #menu-0 .dropdown-item {
-  color: #ffffff;
+  color: #000;
 }
 
 #menu-0 .link {
   font-size: 0.75rem;
+}
+
+#menu-0 .nav-link {
+  border: none;
 }
 
 #menu-0 .dropdown-item,
@@ -151,30 +158,30 @@
 #menu-0 .dropdown-item:hover,
 #menu-0 .link:focus,
 #menu-0 .dropdown-item:focus {
-  color: #efefef;
+  color: #000;
 }
 
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-menu {
-  background: #3a3a3a;
+  background: #FFF;
 }
 
 #menu-0 .nav-dropdown-sm .link:focus,
 #menu-0 .nav-dropdown-sm .link:hover,
 #menu-0 .nav-dropdown-sm .dropdown-item:focus,
 #menu-0 .nav-dropdown-sm .dropdown-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #f1f1f1 !important;
 }
 
 #menu-0 .navbar,
 #menu-0 .nav-dropdown-sm,
 #menu-0 .nav-dropdown-sm .link[aria-expanded="true"],
 #menu-0 .nav-dropdown-sm .dropdown-menu {
-  background: #535353;
+  background: #FFF;
 }
 
 #menu-0 .bg-color.transparent .link {
-  color: #ffffff;
+  color: #000;
   transition: none;
 }
 
@@ -184,12 +191,12 @@
 
 #menu-0 .bg-color.transparent.opened .link:hover,
 #menu-0 .bg-color.transparent.opened .link:focus {
-  color: #efefef;
+  color: #000;
 }
 
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-item[aria-expanded="true"] {
-  color: #efefef!important;
+  color: #000!important;
 }
 
 #menu-0 span {
@@ -245,9 +252,13 @@
 
 /* Timeline */
 
+.tline-item-content {
+  width: 59.7%;
+}
+
 @media only screen and (max-width:1199px) {
   .tline-item-content {
-    width: 50.6%;
+    width: 50%;
   }
 }
 
@@ -428,7 +439,7 @@
   padding: 0;
   overflow: hidden;
   position: relative;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .photos-section p {

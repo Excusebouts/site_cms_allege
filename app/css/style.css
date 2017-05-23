@@ -2,15 +2,26 @@
 
 .unslider {
   position: relative;
-  padding: 0 70px;
+  padding: 0;
 }
 
 .unslider div {
-  max-height: 500px;
+  /*max-height: 500px;*/
 }
 
+.home-slider-image ul li img {
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  max-width: none;
+}
 .unslider-nav {
-  padding-top: 20px;
+  position: absolute;
+  z-index: 2;
+  margin-top: -40px;
+  padding-top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .unslider-nav ol li {
@@ -82,7 +93,7 @@
   padding: 0;
   margin: 0;
   border-width: 0;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 #menu-0 .navbar.navbar-short {
@@ -227,12 +238,13 @@
 }
 
 
-/* Timeline */
+/* Page Image */
 
 .home-slider-image,
 .slider-image {
   width: 100%;
-  height: 400px;
+  height: 680px;
+  padding-top: 60px;
   overflow: hidden;
   background-color: #FFF;
 }

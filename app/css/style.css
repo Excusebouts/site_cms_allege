@@ -15,6 +15,7 @@
   min-width: 100%;
   max-width: none;
 }
+
 .unslider-nav {
   position: absolute;
   z-index: 2;
@@ -431,17 +432,49 @@
   float: left;
   width: 60px;
   height: 58px;
+  line-height: 58px;
   display: inline-block;
   text-align: center;
 }
 
+.side-menu .short .fa {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
 .side-menu .desc {
-  line-height: normal;
-  padding: 10px;
+  padding: 0 10px;
   float: left;
   width: 120px;
   height: 58px;
-  display: block;
+  display: table;
+  overflow: hidden;
+}
+
+.side-menu .desc p {
+  display: table-cell;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+
+/* Section hover */
+
+.hover-extend > div {
+  transition: width 1s ease-in-out;
+}
+
+
+/* Timeline */
+
+.item-hidden {
+  display: none;
+}
+
+#timeline-button-less.disabled,
+#timeline-button-more.disabled {
+  opacity: 1;
+  background-color: #ddd;
 }
 
 

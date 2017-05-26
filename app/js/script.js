@@ -33,6 +33,9 @@ $('#timeline-button-more').click(function () {
 });
 
 $('.hover-extend > div').mouseenter(function () {
-  $('.hover-extend > div').removeClass('col-sm-12 col-md-12');
-  $(this).addClass('col-sm-12 col-md-12');
+  $(this).find('.reveal').slideToggle(500);
+});
+
+$('.hover-extend > div').mouseleave(function () {
+  $(this).find('.reveal').slideToggle(500);
 });

@@ -1,0 +1,19 @@
+1497382284
+a:2:{s:7:"content";s:480:"<div class="home-slider-image" id="demos" style="background:#F1F1F1; padding-top: 0;">
+  <div style="padding: 60px 0 0;">
+    <div class="automatic-slider">
+      <ul>
+        <li>
+          <a href="page1.html"><img src="img/otter1.jpg" /></a>
+        </li>
+        <li>
+          <a href="page2.html"><img src="img/otter2.jpg" /></a>
+        </li>
+        <li>
+          <a href="page3.html"><img src="img/otter3.jpg" /></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+";s:12:"content_meta";N;}

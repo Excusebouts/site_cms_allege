@@ -1,0 +1,65 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    {% block stylesheets %}       
+        {% do assets.addCss('theme://css/bootstrap.min.css', 100) %}
+        {% do assets.addCss('theme://css/unslider.css', 99) %}
+        {% do assets.addCss('theme://css/unslider-dots.css', 98) %}
+        {% do assets.addCss('theme://css/dropdown.css', 97) %}
+        {% do assets.addCss('theme://css/bootstrap-m-app.min.css', 96) %}
+        {% do assets.addCss('theme://css/style-m-app.css', 95) %}
+        {% do assets.addCss('theme://css/animate-layana.min.css', 94) %}
+        {% do assets.addCss('theme://css/style-layana.css', 93) %}
+        {% do assets.addCss('theme://css/custom.css', 92) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+{% endblock head%}
+</head>
+<body>
+
+{% block body %}    
+    {% block content %}{% endblock %}   
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('theme://js/jquery.js', 100) %}
+    {% do assets.addJs('theme://js/jquery.event.swipe.js', 100) %}
+    {% do assets.addJs('theme://js/jquery.touch-swipe.min.js', 100) %}
+    {% do assets.addJs('theme://js/velocity.min.js', 100) %}
+    {% do assets.addJs('theme://js/unslider.min.js', 100) %}
+    {% do assets.addJs('theme://js/tether.min.js', 100) %}
+    {% do assets.addJs('theme://js/bootstrap.min.js', 100) %}
+    {% do assets.addJs('theme://js/parallax.js', 100) %}
+    {% do assets.addJs('theme://js/contact.js', 100) %}
+    {% do assets.addJs('theme://js/countto.js', 100) %}
+    {% do assets.addJs('theme://js/jquery.easing.min.js', 100) %}
+    {% do assets.addJs('theme://js/wow.min.js', 100) %}
+    {% do assets.addJs('theme://js/common.js', 100) %}
+    {% do assets.addJs('theme://js/dropdown.min.js', 100) %}
+    {% do assets.addJs('theme://js/jquery.gmap.js', 100) %}
+    {% do assets.addJs('theme://js/map.js', 100) %}
+{% endblock %}
+{{ assets.js() }}
+
+<script>
+    $('.automatic-slider').unslider({
+      autoplay: true,
+      speed: 700,
+      delay: 5000
+    });
+</script>
+</body>
+</html>

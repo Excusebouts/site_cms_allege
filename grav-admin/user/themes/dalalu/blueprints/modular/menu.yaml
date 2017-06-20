@@ -94,5 +94,5 @@ form:
 
             header.images:
               type: pagemedia
-              label: Images du bas de page
+              label: Images du menu
 

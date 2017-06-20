@@ -16,6 +16,13 @@ form:
             uploads:
               unset@: true
 
+            header.pageaccueil:
+              type: toggle
+              label: Activer la marge 
+              options:
+                1: oui
+                2: non              
+
             header.list:
               type: columns
               fields:

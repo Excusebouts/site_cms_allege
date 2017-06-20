@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/blueprints/modular/menu.yaml',
-    'modified' => 1496778820,
+    'modified' => 1497992726,
     'data' => [
         'title' => 'Menu',
         '@extends' => [
@@ -130,7 +130,7 @@ return [
                                 ],
                                 'header.images' => [
                                     'type' => 'pagemedia',
-                                    'label' => 'Images du bas de page'
+                                    'label' => 'Images du menu'
                                 ]
                             ]
                         ]

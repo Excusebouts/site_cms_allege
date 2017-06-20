@@ -2,9 +2,9 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/blueprints/modular/footer.yaml',
-    'modified' => 1496679068,
+    'modified' => 1497987464,
     'data' => [
-        'title' => 'Gallery',
+        'title' => 'Footer',
         '@extends' => [
             'type' => 'default',
             'context' => 'blueprints://pages'
@@ -20,6 +20,14 @@ return [
                                 ],
                                 'uploads' => [
                                     'unset@' => true
+                                ],
+                                'header.pageaccueil' => [
+                                    'type' => 'toggle',
+                                    'label' => 'Activer la marge',
+                                    'options' => [
+                                        1 => 'oui',
+                                        2 => 'non'
+                                    ]
                                 ],
                                 'header.list' => [
                                     'type' => 'columns',

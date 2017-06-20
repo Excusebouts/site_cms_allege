@@ -21,5 +21,5 @@ access:
     users: 'true'
   site:
     login: 'true'
-hashed_password: $2y$10$.vro1URK3kAXY89TrQDAAOFQhWsX9cIINM8fy/yzHAoAtNjFGkotS
+hashed_password: $2y$10$7Jv0.lofSsm0IfIOAE1INunGSb580ZRG6Jb0lX5r7ILj1nr3cTrSe
 language: fr

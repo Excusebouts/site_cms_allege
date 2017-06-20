@@ -2,16 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/config/system.yaml',
-    'modified' => 1496664482,
+    'modified' => 1497992008,
     'data' => [
         'absolute_urls' => false,
-        'timezone' => '',
-        'default_locale' => NULL,
         'param_sep' => ':',
         'wrapped_site' => false,
         'reverse_proxy_setup' => false,
         'force_ssl' => false,
-        'custom_base_url' => '',
         'username_regex' => '^[a-z0-9_-]{3,16}$',
         'pwd_regex' => '(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}',
         'languages' => [
@@ -26,7 +23,7 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/home',
+            'alias' => '/page-modulaire',
             'hide_in_urls' => false
         ],
         'pages' => [
@@ -39,7 +36,6 @@ return [
                 'count' => 20
             ],
             'dateformat' => [
-                'default' => NULL,
                 'short' => 'jS M Y',
                 'long' => 'F jS \\a\\t g:ia'
             ],
@@ -73,7 +69,6 @@ return [
                 5 => 'rss',
                 6 => 'atom'
             ],
-            'append_url_extension' => '',
             'expires' => 604800,
             'last_modified' => false,
             'etag' => false,
@@ -108,10 +103,7 @@ return [
             'cli_compatibility' => false,
             'lifetime' => 604800,
             'gzip' => false,
-            'allow_webserver_gzip' => false,
-            'redis' => [
-                'socket' => false
-            ]
+            'allow_webserver_gzip' => false
         ],
         'twig' => [
             'cache' => true,
@@ -158,13 +150,7 @@ return [
         ],
         'media' => [
             'enable_media_timestamp' => false,
-            'upload_limit' => 0,
-            'unsupported_inline_types' => [
-                
-            ],
-            'allowed_fallback_types' => [
-                
-            ]
+            'upload_limit' => 0
         ],
         'session' => [
             'enabled' => true,
@@ -172,12 +158,10 @@ return [
             'name' => 'grav-site',
             'secure' => false,
             'httponly' => true,
-            'split' => true,
-            'path' => NULL
+            'split' => true
         ],
         'gpm' => [
             'releases' => 'stable',
-            'proxy_url' => NULL,
             'method' => 'auto',
             'verify_peer' => true,
             'official_gpm_only' => true

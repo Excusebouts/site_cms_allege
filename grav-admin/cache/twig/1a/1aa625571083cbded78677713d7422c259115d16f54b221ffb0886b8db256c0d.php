@@ -28,7 +28,7 @@ class __TwigTemplate_51f48495de4547df0993bc8d5eeee189174746eef47b38e8e1b0412eed9
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "    ";
+        echo "   \t";
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
     ";
@@ -79,7 +79,7 @@ class __TwigTemplate_51f48495de4547df0993bc8d5eeee189174746eef47b38e8e1b0412eed9
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
+   \t{{ page.content }}
     {% for module in page.collection() %}
         <div id=\"{{ _self.pageLinkName(module.menu) }}\"></div>
         {{ module.content }}

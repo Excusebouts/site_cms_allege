@@ -2,9 +2,9 @@
   <div style="padding: 60px 0 0;">
     <div class="automatic-slider">
       <ul>      
-        {% for test in page.media.images %}
+        {% for image in page.media.images %}
         <li>
-          <a href="{{ header.listurlslider[loop.index-1].url }}"><img src="{{ test.url }}" /></a>
+          <a href="{{ header.listurlslider[loop.index-1].url }}"><img src="{{ image.url }}" /></a>
         </li>
         {% endfor %}
       </ul>

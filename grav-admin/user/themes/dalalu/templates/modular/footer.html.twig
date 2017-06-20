@@ -1,4 +1,8 @@
+{% if header.pageaccueil == 1 %}
 <section class="bg-dark footer-block" style="margin-top: -500px;">
+{% else %}
+<section class="bg-dark footer-block">
+{% endif %}
   <div class="container">
     <footer>
       <div class="container-fluid">
@@ -7,7 +11,7 @@
             <div class="row">
               <div class="col-xs-12 col-md-8">
                 <div class="row">
-                  <div class="col-xs-4">
+                  <div class="col-xs-4">                   
                     <ul class="list-unstyled">   
                       {% for list_gauche in header.list_gauche %}
                         <li class="">

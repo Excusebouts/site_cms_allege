@@ -20,16 +20,20 @@ class __TwigTemplate_a0217c69df0e897e67818704f44af3ded212f0de867842a4ad01ea79d1f
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
-        <h2 class=\"section-heading\">Nous contacter</h2>
+        <h2 class=\"section-heading\">";
+        // line 5
+        echo $this->getAttribute(($context["header"] ?? null), "titre_contact", array());
+        echo "</h2>
         <hr class=\"primary\">
-        <p>
-          Prêt à démarrer votre prochain projet avec nous&nbsp;? C'est génial&nbsp;! Appelez-nous ou envoyez-nous un courriel et nous vous répondrons dans les meilleurs délais&nbsp;!
-        </p>
+        <p>";
+        // line 7
+        echo $this->getAttribute(($context["header"] ?? null), "texte_contact", array());
+        echo "</p>
         <div class=\"regularform\">
           <div class=\"done\">
             <div class=\"alert alert-success\">
               <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-              Your message has been sent. Thank you!
+              Votre message a bien été envoyé. Merci.
             </div>
           </div>
           <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"text-left\">
@@ -55,7 +59,10 @@ class __TwigTemplate_a0217c69df0e897e67818704f44af3ded212f0de867842a4ad01ea79d1f
 
             <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
             <div class=\"col-md-12\" style=\"text-align:center;\">
-              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"Envoyer\">
+              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"";
+        // line 38
+        echo $this->getAttribute(($context["header"] ?? null), "bouton_contact", array());
+        echo "\">
             </div>
           </form>
         </div>
@@ -70,9 +77,14 @@ class __TwigTemplate_a0217c69df0e897e67818704f44af3ded212f0de867842a4ad01ea79d1f
         return "modular/contact_bloc.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  64 => 38,  30 => 7,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -89,16 +101,14 @@ class __TwigTemplate_a0217c69df0e897e67818704f44af3ded212f0de867842a4ad01ea79d1f
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
-        <h2 class=\"section-heading\">Nous contacter</h2>
+        <h2 class=\"section-heading\">{{ header.titre_contact }}</h2>
         <hr class=\"primary\">
-        <p>
-          Prêt à démarrer votre prochain projet avec nous&nbsp;? C'est génial&nbsp;! Appelez-nous ou envoyez-nous un courriel et nous vous répondrons dans les meilleurs délais&nbsp;!
-        </p>
+        <p>{{ header.texte_contact }}</p>
         <div class=\"regularform\">
           <div class=\"done\">
             <div class=\"alert alert-success\">
               <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-              Your message has been sent. Thank you!
+              Votre message a bien été envoyé. Merci.
             </div>
           </div>
           <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"text-left\">
@@ -124,7 +134,7 @@ class __TwigTemplate_a0217c69df0e897e67818704f44af3ded212f0de867842a4ad01ea79d1f
 
             <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
             <div class=\"col-md-12\" style=\"text-align:center;\">
-              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"Envoyer\">
+              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"{{ header.bouton_contact }}\">
             </div>
           </form>
         </div>

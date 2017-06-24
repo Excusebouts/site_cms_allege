@@ -20,7 +20,10 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
-        <h2 class=\"section-heading\">Nous trouver</h2>
+        <h2 class=\"section-heading\">";
+        // line 5
+        echo $this->getAttribute(($context["header"] ?? null), "titre_map", array());
+        echo "</h2>
         <hr class=\"primary\">
       </div>
     </div>
@@ -30,9 +33,10 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
           <p>Map will not be display without Internet Connection.</p>
         </div>
       </div>
-      <div class=\"col-md-6\">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nulla eget vulputate malesuada. Praesent ultrices cursus nisi, eu viverra erat mattis sed. Nam tellus elit, bibendum eget cursus vel, ornare ac felis.
-      </div>
+      <div class=\"col-md-6\">";
+        // line 15
+        echo $this->getAttribute(($context["header"] ?? null), "texte_map", array());
+        echo "</div>
     </div>
   </div>
 </section>";
@@ -43,9 +47,14 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
         return "modular/map.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  38 => 15,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -62,7 +71,7 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
-        <h2 class=\"section-heading\">Nous trouver</h2>
+        <h2 class=\"section-heading\">{{ header.titre_map }}</h2>
         <hr class=\"primary\">
       </div>
     </div>
@@ -72,9 +81,7 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
           <p>Map will not be display without Internet Connection.</p>
         </div>
       </div>
-      <div class=\"col-md-6\">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus nulla eget vulputate malesuada. Praesent ultrices cursus nisi, eu viverra erat mattis sed. Nam tellus elit, bibendum eget cursus vel, ornare ac felis.
-      </div>
+      <div class=\"col-md-6\">{{ header.texte_map }}</div>
     </div>
   </div>
 </section>", "modular/map.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/modular/map.html.twig");

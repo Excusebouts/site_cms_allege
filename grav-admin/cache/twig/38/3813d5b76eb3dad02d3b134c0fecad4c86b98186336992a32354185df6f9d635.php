@@ -44,10 +44,9 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
 ";
         // line 40
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 58
+        // line 59
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
-
 <script>
     \$('.automatic-slider').unslider({
       autoplay: true,
@@ -55,6 +54,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
       delay: 5000
     });
 </script>
+<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js\">
 </body>
 </html>
 ";
@@ -203,8 +203,11 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/dropdown.min.js", 1 => 100), "method");
         // line 55
         echo "    ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.gmap.js", 1 => 100), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/script.js", 1 => 100), "method");
         // line 56
+        echo "    ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.gmap.js", 1 => 100), "method");
+        // line 57
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/map.js", 1 => 100), "method");
     }
@@ -221,7 +224,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
 
     public function getDebugInfo()
     {
-        return array (  208 => 56,  205 => 55,  202 => 54,  199 => 53,  196 => 52,  193 => 51,  190 => 50,  187 => 49,  184 => 48,  181 => 47,  178 => 46,  175 => 45,  172 => 44,  169 => 43,  166 => 42,  163 => 41,  160 => 40,  150 => 37,  145 => 36,  141 => 29,  138 => 28,  135 => 27,  132 => 26,  129 => 25,  126 => 24,  123 => 23,  120 => 22,  117 => 21,  114 => 20,  112 => 19,  106 => 17,  98 => 30,  96 => 17,  90 => 14,  86 => 13,  83 => 12,  81 => 11,  70 => 7,  67 => 6,  64 => 5,  48 => 58,  46 => 40,  43 => 39,  41 => 36,  36 => 33,  34 => 5,  29 => 3,  26 => 2,  24 => 1,);
+        return array (  211 => 57,  208 => 56,  205 => 55,  202 => 54,  199 => 53,  196 => 52,  193 => 51,  190 => 50,  187 => 49,  184 => 48,  181 => 47,  178 => 46,  175 => 45,  172 => 44,  169 => 43,  166 => 42,  163 => 41,  160 => 40,  150 => 37,  145 => 36,  141 => 29,  138 => 28,  135 => 27,  132 => 26,  129 => 25,  126 => 24,  123 => 23,  120 => 22,  117 => 21,  114 => 20,  112 => 19,  106 => 17,  98 => 30,  96 => 17,  90 => 14,  86 => 13,  83 => 12,  81 => 11,  70 => 7,  67 => 6,  64 => 5,  48 => 59,  46 => 40,  43 => 39,  41 => 36,  36 => 33,  34 => 5,  29 => 3,  26 => 2,  24 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -288,11 +291,11 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
     {% do assets.addJs('theme://js/wow.min.js', 100) %}
     {% do assets.addJs('theme://js/common.js', 100) %}
     {% do assets.addJs('theme://js/dropdown.min.js', 100) %}
+    {% do assets.addJs('theme://js/script.js', 100) %}
     {% do assets.addJs('theme://js/jquery.gmap.js', 100) %}
     {% do assets.addJs('theme://js/map.js', 100) %}
 {% endblock %}
 {{ assets.js() }}
-
 <script>
     \$('.automatic-slider').unslider({
       autoplay: true,
@@ -300,6 +303,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
       delay: 5000
     });
 </script>
+<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js\">
 </body>
 </html>
 ", "partials/base.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/partials/base.html.twig");

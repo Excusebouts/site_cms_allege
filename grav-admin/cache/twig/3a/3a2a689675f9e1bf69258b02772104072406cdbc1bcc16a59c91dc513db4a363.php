@@ -16,73 +16,134 @@ class __TwigTemplate_4ff77357ec92889d323e96a0574ad7732dd30aedc111bd38c233f9fefea
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo " <section id=\"services-2\" class=\"services-section section-space-padding bg1\">
+        echo " ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "images", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
+            // line 2
+            echo " <section id=\"services-2\" class=\"services-section section-space-padding\" style=\"background-image: url(";
+            echo $this->getAttribute($context["image"], "url", array());
+            echo ")\">
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-lg-12 text-center\">
-        <h2 class=\"section-heading\">Services</h2>
+        <h2 class=\"section-heading\">";
+            // line 6
+            echo $this->getAttribute(($context["header"] ?? null), "titre_services", array());
+            echo "</h2>
       </div>
     </div>
-
     <div class=\"row\">
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-mobile color-1\"></i>
-          <h3>Mobile Design</h3>
+          <i class=\"fa fa-";
+            // line 12
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_gauche_pictogramme", array());
+            echo " color-1\"></i>
+          <h3>";
+            // line 13
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_gauche_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 15
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_gauche_texte", array());
+            echo "</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-tablet color-2\"></i>
-          <h3>Tablet Design</h3>
+          <i class=\"fa fa-";
+            // line 20
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_milieu_pictogramme", array());
+            echo " color-2\"></i>
+          <h3>";
+            // line 21
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_milieu_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 23
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_milieu_texte", array());
+            echo "</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-code color-3\"></i>
-          <h3>Clean Code</h3>
+          <i class=\"fa fa-";
+            // line 28
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_droite_pictogramme", array());
+            echo " color-3\"></i>
+          <h3>";
+            // line 29
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_droite_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 31
+            echo $this->getAttribute(($context["header"] ?? null), "encart_haut_droite_texte", array());
+            echo "</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-support color-4\"></i>
-          <h3>Full Support</h3>
+          <i class=\"fa fa-";
+            // line 36
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_pictogramme", array());
+            echo " color-4\"></i>
+          <h3>";
+            // line 37
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 39
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_texte", array());
+            echo "</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-html5 color-5\"></i>
-          <h3>HTML5 Design</h3>
+          <i class=\"fa fa-";
+            // line 44
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_pictogramme", array());
+            echo " color-5\"></i>
+          <h3>";
+            // line 45
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 47
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_texte", array());
+            echo "</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-ge color-6\"></i>
-          <h3>CSS3 Design</h3>
+          <i class=\"fa fa-";
+            // line 52
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_droite_pictogramme", array());
+            echo " color-6\"></i>
+          <h3>";
+            // line 53
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_droite_titre", array());
+            echo "</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>";
+            // line 55
+            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_droite_texte", array());
+            echo "</p>
         </div>
       </div>
-
     </div>
   </div>
-</section>";
+</section>
+";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
     }
 
     public function getTemplateName()
@@ -90,9 +151,14 @@ class __TwigTemplate_4ff77357ec92889d323e96a0574ad7732dd30aedc111bd38c233f9fefea
         return "modular/servicesimage.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  135 => 55,  130 => 53,  126 => 52,  118 => 47,  113 => 45,  109 => 44,  101 => 39,  96 => 37,  92 => 36,  84 => 31,  79 => 29,  75 => 28,  67 => 23,  62 => 21,  58 => 20,  50 => 15,  45 => 13,  41 => 12,  32 => 6,  24 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -105,72 +171,66 @@ class __TwigTemplate_4ff77357ec92889d323e96a0574ad7732dd30aedc111bd38c233f9fefea
 
     public function getSourceContext()
     {
-        return new Twig_Source(" <section id=\"services-2\" class=\"services-section section-space-padding bg1\">
+        return new Twig_Source(" {% for image in page.media.images %}
+ <section id=\"services-2\" class=\"services-section section-space-padding\" style=\"background-image: url({{ image.url }})\">
   <div class=\"container\">
     <div class=\"row\">
       <div class=\"col-lg-12 text-center\">
-        <h2 class=\"section-heading\">Services</h2>
+        <h2 class=\"section-heading\">{{ header.titre_services }}</h2>
       </div>
     </div>
-
     <div class=\"row\">
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-mobile color-1\"></i>
-          <h3>Mobile Design</h3>
+          <i class=\"fa fa-{{ header.encart_haut_gauche_pictogramme }} color-1\"></i>
+          <h3>{{ header.encart_haut_gauche_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_haut_gauche_texte }}</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-tablet color-2\"></i>
-          <h3>Tablet Design</h3>
+          <i class=\"fa fa-{{ header.encart_haut_milieu_pictogramme }} color-2\"></i>
+          <h3>{{ header.encart_haut_milieu_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_haut_milieu_texte }}</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-code color-3\"></i>
-          <h3>Clean Code</h3>
+          <i class=\"fa fa-{{ header.encart_haut_droite_pictogramme }} color-3\"></i>
+          <h3>{{ header.encart_haut_droite_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_haut_droite_texte }}</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-support color-4\"></i>
-          <h3>Full Support</h3>
+          <i class=\"fa fa-{{ header.encart_bas_gauche_pictogramme }} color-4\"></i>
+          <h3>{{ header.encart_bas_gauche_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_bas_gauche_texte }}</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-html5 color-5\"></i>
-          <h3>HTML5 Design</h3>
+          <i class=\"fa fa-{{ header.encart_bas_milieu_pictogramme }} color-5\"></i>
+          <h3>{{ header.encart_bas_milieu_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_bas_milieu_texte }}</p>
         </div>
       </div>
-
       <div class=\"col-md-4 col-sm-6\">
         <div class=\"services-detail\">
-          <i class=\"fa fa-ge color-6\"></i>
-          <h3>CSS3 Design</h3>
+          <i class=\"fa fa-{{ header.encart_bas_droite_pictogramme }} color-6\"></i>
+          <h3>{{ header.encart_bas_droite_titre }}</h3>
           <hr>
-          <p>Rolling is a clean and beautiful template with every must features. You can use it for many purpose in website.</p>
+          <p>{{ header.encart_bas_droite_texte }}</p>
         </div>
       </div>
-
     </div>
   </div>
-</section>", "modular/servicesimage.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/modular/servicesimage.html.twig");
+</section>
+{% endfor %}", "modular/servicesimage.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/modular/servicesimage.html.twig");
     }
 }

@@ -16,28 +16,57 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<section>
+        if (($this->getAttribute(($context["header"] ?? null), "grande_carte", array()) == 1)) {
+            // line 2
+            echo "<section style=\"padding: 0;\">
+  <div class=\"container\" style=\"max-width: 100%; padding: 0; margin: 0 auto; width: 100%;\">
+";
+        } else {
+            // line 5
+            echo "<section>
   <div class=\"container\">
+";
+        }
+        // line 7
+        echo "  
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
         <h2 class=\"section-heading\">";
-        // line 5
+        // line 10
         echo $this->getAttribute(($context["header"] ?? null), "titre_map", array());
         echo "</h2>
         <hr class=\"primary\">
       </div>
     </div>
     <div class=\"row\">
-      <div class=\"col-md-6\">
+      ";
+        // line 15
+        if (($this->getAttribute(($context["header"] ?? null), "grande_carte", array()) == 1)) {
+            // line 16
+            echo "      <div class=\"col-md-12\">
+        <div id=\"carte-page2\" class=\"map space-set\">
+      ";
+        } else {
+            // line 19
+            echo "      <div class=\"col-md-6\">
         <div id=\"carte-page1\" class=\"map space-set\">
-          <p>Map will not be display without Internet Connection.</p>
+      ";
+        }
+        // line 22
+        echo "          <p>La map ne peut s'afficher sans connexion internet</p>
         </div>
       </div>
-      <div class=\"col-md-6\">";
-        // line 15
-        echo $this->getAttribute(($context["header"] ?? null), "texte_map", array());
-        echo "</div>
-    </div>
+      ";
+        // line 25
+        if (($this->getAttribute(($context["header"] ?? null), "grande_carte", array()) != 1)) {
+            // line 26
+            echo "      <div class=\"col-md-6\">";
+            echo $this->getAttribute(($context["header"] ?? null), "texte_map", array());
+            echo "</div>
+      ";
+        }
+        // line 28
+        echo "    </div>
   </div>
 </section>";
     }
@@ -54,7 +83,7 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
 
     public function getDebugInfo()
     {
-        return array (  38 => 15,  25 => 5,  19 => 1,);
+        return array (  69 => 28,  63 => 26,  61 => 25,  56 => 22,  51 => 19,  46 => 16,  44 => 15,  36 => 10,  31 => 7,  26 => 5,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -67,8 +96,13 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
 
     public function getSourceContext()
     {
-        return new Twig_Source("<section>
+        return new Twig_Source("{% if header.grande_carte == 1 %}
+<section style=\"padding: 0;\">
+  <div class=\"container\" style=\"max-width: 100%; padding: 0; margin: 0 auto; width: 100%;\">
+{% else %}
+<section>
   <div class=\"container\">
+{% endif %}  
     <div class=\"row\">
       <div class=\"col-md-8 col-md-offset-2 text-center\">
         <h2 class=\"section-heading\">{{ header.titre_map }}</h2>
@@ -76,12 +110,19 @@ class __TwigTemplate_fc757763c1d1fb6b1729afa356ffd256794fb17a0539231790cc0f25d9a
       </div>
     </div>
     <div class=\"row\">
+      {% if header.grande_carte == 1 %}
+      <div class=\"col-md-12\">
+        <div id=\"carte-page2\" class=\"map space-set\">
+      {% else %}
       <div class=\"col-md-6\">
         <div id=\"carte-page1\" class=\"map space-set\">
-          <p>Map will not be display without Internet Connection.</p>
+      {% endif %}
+          <p>La map ne peut s'afficher sans connexion internet</p>
         </div>
       </div>
+      {% if header.grande_carte != 1 %}
       <div class=\"col-md-6\">{{ header.texte_map }}</div>
+      {% endif %}
     </div>
   </div>
 </section>", "modular/map.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/modular/map.html.twig");

@@ -1,0 +1,59 @@
+{% if header.direction == 1 %}
+<div id="about" class="about text-photos">
+{% else %}
+<div id="works" class="works text-photos">
+{% endif %}
+  <div class="row">
+    {% if header.direction == 1 %}
+    <div class="col-sm-7 wowload fadeInLeft">
+      <div id="carousel-about" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          {% for image in page.media.images %}
+            {% if loop.index == 1 %}
+              <div class="item active"><img src="{{ image.url }}" class="img-responsive"></div>    
+            {% else %}        
+              <div class="item"><img src="{{ image.url }}" class="img-responsive"></div> 
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-about" role="button" data-slide="prev"><i class="fa fa-3x fa-angle-left"></i></a>      
+        <a class="right carousel-control" href="#carousel-about" role="button" data-slide="next"><i class="fa fa-3x fa-angle-right"></i></a>
+      </div>
+    </div>
+    {% else %}
+    <div class="col-sm-5 wowload fadeInLeft">
+      <div class="spacer">
+        <h2>{{ header.titre }}</h2>
+        <p>{{ header.texte }}<p>
+      </div>
+    </div>
+    {% endif %}
+    {% if header.direction == 1 %}
+    <div class="col-sm-5 wowload fadeInRight">
+      <div class="spacer">
+        <h2>{{ header.titre }}</h2>
+        <p>{{ header.texte }}</p>        
+      </div>
+    </div>
+    {% else %}
+    <div class="col-sm-7 wowload fadeInRight">
+      <div id="carousel-works" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          {% for image in page.media.images %}
+            {% if loop.index == 1 %}
+              <div class="item active"><img src="{{ image.url }}" class="img-responsive"></div>   
+            {% else %}
+              <div class="item"><img src="{{ image.url }}" class="img-responsive"></div> 
+            {% endif %}         
+          {% endfor %}
+        </div>
+        <a class="left carousel-control" href="#carousel-works" role="button" data-slide="prev"><i class="fa fa-3x fa-angle-left"></i></a>
+        <a class="right carousel-control" href="#carousel-works" role="button" data-slide="next"><i class="fa fa-3x fa-angle-right"></i>
+        </a> 
+      </div>   
+    </div> 
+    {% endif %}
+  </div>
+</div>
+    

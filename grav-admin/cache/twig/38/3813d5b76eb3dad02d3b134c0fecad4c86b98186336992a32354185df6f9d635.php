@@ -44,7 +44,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
 ";
         // line 40
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 59
+        // line 60
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
 <script>
@@ -54,7 +54,6 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
       delay: 5000
     });
 </script>
-<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js\">
 </body>
 </html>
 ";
@@ -206,8 +205,11 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/script.js", 1 => 100), "method");
         // line 56
         echo "    ";
-        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.gmap.js", 1 => 100), "method");
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "http://maps.google.com/maps/api/js?key=AIzaSyAv1tUCt3Gh5BIy_m0BLi6NHYPzuXmngRU", 1 => 100), "method");
         // line 57
+        echo "    ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.gmap.js", 1 => 100), "method");
+        // line 58
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/map.js", 1 => 100), "method");
     }
@@ -224,7 +226,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
 
     public function getDebugInfo()
     {
-        return array (  211 => 57,  208 => 56,  205 => 55,  202 => 54,  199 => 53,  196 => 52,  193 => 51,  190 => 50,  187 => 49,  184 => 48,  181 => 47,  178 => 46,  175 => 45,  172 => 44,  169 => 43,  166 => 42,  163 => 41,  160 => 40,  150 => 37,  145 => 36,  141 => 29,  138 => 28,  135 => 27,  132 => 26,  129 => 25,  126 => 24,  123 => 23,  120 => 22,  117 => 21,  114 => 20,  112 => 19,  106 => 17,  98 => 30,  96 => 17,  90 => 14,  86 => 13,  83 => 12,  81 => 11,  70 => 7,  67 => 6,  64 => 5,  48 => 59,  46 => 40,  43 => 39,  41 => 36,  36 => 33,  34 => 5,  29 => 3,  26 => 2,  24 => 1,);
+        return array (  213 => 58,  210 => 57,  207 => 56,  204 => 55,  201 => 54,  198 => 53,  195 => 52,  192 => 51,  189 => 50,  186 => 49,  183 => 48,  180 => 47,  177 => 46,  174 => 45,  171 => 44,  168 => 43,  165 => 42,  162 => 41,  159 => 40,  149 => 37,  144 => 36,  140 => 29,  137 => 28,  134 => 27,  131 => 26,  128 => 25,  125 => 24,  122 => 23,  119 => 22,  116 => 21,  113 => 20,  111 => 19,  105 => 17,  97 => 30,  95 => 17,  89 => 14,  85 => 13,  82 => 12,  80 => 11,  69 => 7,  66 => 6,  63 => 5,  48 => 60,  46 => 40,  43 => 39,  41 => 36,  36 => 33,  34 => 5,  29 => 3,  26 => 2,  24 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -292,6 +294,7 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
     {% do assets.addJs('theme://js/common.js', 100) %}
     {% do assets.addJs('theme://js/dropdown.min.js', 100) %}
     {% do assets.addJs('theme://js/script.js', 100) %}
+    {% do assets.addJs('http://maps.google.com/maps/api/js?key=AIzaSyAv1tUCt3Gh5BIy_m0BLi6NHYPzuXmngRU',100) %}
     {% do assets.addJs('theme://js/jquery.gmap.js', 100) %}
     {% do assets.addJs('theme://js/map.js', 100) %}
 {% endblock %}
@@ -303,7 +306,6 @@ class __TwigTemplate_52b91f4b088955251b10d900b13650576dea9da9cea574c7807907844b9
       delay: 5000
     });
 </script>
-<script type=\"text/javascript\" src=\"http://maps.google.com/maps/api/js\">
 </body>
 </html>
 ", "partials/base.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/themes/dalalu/templates/partials/base.html.twig");

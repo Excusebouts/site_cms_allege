@@ -1,0 +1,47 @@
+<section id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section-heading">{{ header.titre_temoignages }}</h2>
+        <hr class="primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" data-wow-delay="0.2s">
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel">         
+          <ol class="carousel-indicators">
+            {% for temoignage in header.list_temoignages %}
+            {% if loop.index == 1 %}
+            <li data-target="#quote-carousel" data-slide-to="{{ loop.index-1 }}" class="active"><img class="img-responsive " src="{{ page.media[temoignage.nom_image].url }}" alt="">
+            </li>
+            {% else %}
+            <li data-target="#quote-carousel" data-slide-to="{{ loop.index-1 }}"><img class="img-responsive" src="{{ page.media[temoignage.nom_image].url }}" alt="">
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ol>           
+          <div class="carousel-inner text-center">
+            {% for temoignage in header.list_temoignages %}  
+            {% if loop.index == 1 %}
+            <div class="item active">
+            {% else %}
+            <div class="item">
+            {% endif %}
+              <blockquote>
+                <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2">
+                    <p>{{ temoignage.texte }}</p>
+                    <small>{{ temoignage.auteur }}</small>
+                  </div>
+                </div>
+              </blockquote>
+            </div>   
+            {% endfor %}         
+          </div>       
+          <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+          <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

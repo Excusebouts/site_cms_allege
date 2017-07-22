@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/plugins/langswitcher/blueprints.yaml',
-    'modified' => 1495819639,
+    'modified' => 1500724211,
     'data' => [
         'name' => 'LangSwitcher',
-        'version' => '1.3.0',
+        'version' => '1.4.0',
         'description' => 'LangSwitcher is a [Grav](http://github.com/getgrav/grav) plugin that provides native language text links to switch between [multiple languages](http://learn.getgrav.org/content/multi-language) in Grav **v0.9.30** or greater.',
         'icon' => 'globe',
         'author' => [
@@ -44,6 +44,17 @@ return [
                     ],
                     'validate' => [
                         'type' => 'bool'
+                    ]
+                ],
+                'untranslated_pages_behavior' => [
+                    'type' => 'select',
+                    'label' => 'Untranslated pages behavior',
+                    'help' => 'Determine what to do with a language link when the current page doesn\'t exist in that language or it exists but it\'s not published.',
+                    'default' => 'none',
+                    'options' => [
+                        'none' => 'Show language (default)',
+                        'redirect' => 'Show language, link to home route',
+                        'hide' => 'Hide language'
                     ]
                 ]
             ]

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/plugins/admin/blueprints/admin/pages/new_folder.yaml',
-    'modified' => 1493026482,
+    'modified' => 1500724202,
     'data' => [
         'rules' => [
             'slug' => [

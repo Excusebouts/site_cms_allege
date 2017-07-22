@@ -3,7 +3,7 @@ title: 'Bas de page'
 pageaccueil: '1'
 list_gauche:
     -
-        text: Gouttières
+        text: Toto
         url: /fr/produits-dal-alu/gouttieres-1/
     -
         text: 'Habillages Aluminium'

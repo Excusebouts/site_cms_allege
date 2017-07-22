@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/plugins/admin/blueprints/admin/pages/new.yaml',
-    'modified' => 1493026482,
+    'modified' => 1500724202,
     'data' => [
         'rules' => [
             'slug' => [
@@ -48,7 +48,7 @@ return [
                     'classes' => 'fancy',
                     'label' => 'PLUGIN_ADMIN.PAGE_FILE',
                     'help' => 'PLUGIN_ADMIN.PAGE_FILE_HELP',
-                    'data-options@' => '\\Grav\\Common\\Page\\Pages::types',
+                    'data-options@' => '\\Grav\\Plugin\\AdminPlugin::pagesTypes',
                     'data-default@' => '\\Grav\\Plugin\\Admin\\Admin::getLastPageName',
                     'validate' => [
                         'required' => true

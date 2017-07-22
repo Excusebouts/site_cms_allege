@@ -1,25 +1,25 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1498398860,
-    'checksum' => '7644ca9d398ed420e9bcb994ff494202',
+    'timestamp' => 1500724319,
+    'checksum' => '16a58c40798d3bb544201a34d0e607e0',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1493026482
+                'modified' => 1500724167
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1493026482
+                'modified' => 1500724167
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1493026482
+                'modified' => 1500724167
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1493026482
+                'modified' => 1500724167
             ]
         ],
         'user/plugins' => [
@@ -33,15 +33,15 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1493026482
+                'modified' => 1500724202
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1495820087
+                'modified' => 1500724209
             ],
             'plugins/langswitcher' => [
                 'file' => 'user/plugins/langswitcher/blueprints.yaml',
-                'modified' => 1495819639
+                'modified' => 1500724211
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -53,7 +53,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1495820092
+                'modified' => 1500724206
             ],
             'plugins/markdown-notices' => [
                 'file' => 'user/plugins/markdown-notices/blueprints.yaml',
@@ -64,18 +64,18 @@ return [
     'data' => [
         'items' => [
             'media' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'site' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'site.title' => [
                 'type' => 'text',
@@ -201,12 +201,12 @@ return [
                 'validation' => 'loose'
             ],
             'streams' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose',
                     'hidden' => true
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'streams.schemes' => [
                 'type' => '_parent',
@@ -219,11 +219,11 @@ return [
                 'validation' => 'loose'
             ],
             'system' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'system.home' => [
                 'type' => '_parent',
@@ -1334,7 +1334,6 @@ return [
                 'type' => 'range',
                 'append' => '%',
                 'label' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY',
-                'classes' => 'x-small',
                 'validate' => [
                     'min' => 1,
                     'max' => 100
@@ -1425,6 +1424,20 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'system.media.enable_media_timestamp',
+                'validation' => 'loose'
+            ],
+            'system.media.auto_metadata_exif' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.ENABLE_AUTO_METADATA',
+                'highlight' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.YES',
+                    0 => 'PLUGIN_ADMIN.NO'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'system.media.auto_metadata_exif',
                 'validation' => 'loose'
             ],
             'system.media.allowed_fallback_types' => [
@@ -1702,11 +1715,11 @@ return [
                 'validation' => 'loose'
             ],
             'plugins.email' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins' => [
                 'type' => '_parent',
@@ -1934,11 +1947,11 @@ return [
                 'validation' => 'loose'
             ],
             'plugins.devtools' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.devtools.enabled' => [
                 'type' => 'toggle',
@@ -1956,11 +1969,11 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.admin' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.admin.Basics' => [
                 'type' => 'section',
@@ -2093,6 +2106,37 @@ return [
                 'name' => 'plugins.admin.edit_mode',
                 'validation' => 'loose'
             ],
+            'plugins.admin.frontend_pages_target' => [
+                'type' => 'select',
+                'label' => 'Open frontend pages in',
+                'size' => 'medium',
+                'default' => '_blank',
+                'options' => [
+                    '_blank' => 'New tab',
+                    'frontend_tab' => 'Separate tab (always the same)',
+                    '_self' => 'Current tab'
+                ],
+                'name' => 'plugins.admin.frontend_pages_target',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.pages' => [
+                'type' => '_parent',
+                'name' => 'plugins.admin.pages',
+                'form_field' => false
+            ],
+            'plugins.admin.pages.show_parents' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'label' => 'Parent dropdown',
+                'highlight' => 1,
+                'options' => [
+                    'both' => 'Show slug and folder',
+                    'folder' => 'Show folder',
+                    'fullpath' => 'Show fullpath'
+                ],
+                'name' => 'plugins.admin.pages.show_parents',
+                'validation' => 'loose'
+            ],
             'plugins.admin.google_fonts' => [
                 'type' => 'toggle',
                 'label' => 'Use Google Fonts',
@@ -2178,6 +2222,20 @@ return [
                     'type' => 'bool'
                 ],
                 'name' => 'plugins.admin.warnings.delete_page',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.hide_page_types' => [
+                'type' => 'array',
+                'label' => 'Hide page types in Admin',
+                'value_only' => true,
+                'name' => 'plugins.admin.hide_page_types',
+                'validation' => 'loose'
+            ],
+            'plugins.admin.hide_modular_page_types' => [
+                'type' => 'array',
+                'label' => 'Hide modular page types in Admin',
+                'value_only' => true,
+                'name' => 'plugins.admin.hide_modular_page_types',
                 'validation' => 'loose'
             ],
             'plugins.admin.Dashboard' => [
@@ -2419,11 +2477,11 @@ return [
                 'validation' => 'loose'
             ],
             'plugins.login' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'loose'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.login.enabled' => [
                 'type' => 'hidden',
@@ -2820,11 +2878,11 @@ return [
                 'validation' => 'loose'
             ],
             'plugins.langswitcher' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.langswitcher.enabled' => [
                 'type' => 'toggle',
@@ -2856,12 +2914,24 @@ return [
                 'name' => 'plugins.langswitcher.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.langswitcher.untranslated_pages_behavior' => [
+                'type' => 'select',
+                'label' => 'Untranslated pages behavior',
+                'default' => 'none',
+                'options' => [
+                    'none' => 'Show language (default)',
+                    'redirect' => 'Show language, link to home route',
+                    'hide' => 'Hide language'
+                ],
+                'name' => 'plugins.langswitcher.untranslated_pages_behavior',
+                'validation' => 'strict'
+            ],
             'plugins.error' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.error.enabled' => [
                 'type' => 'toggle',
@@ -2892,11 +2962,11 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.problems' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.problems.enabled' => [
                 'type' => 'toggle',
@@ -2929,11 +2999,11 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.form' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.form.enabled' => [
                 'type' => 'hidden',
@@ -3031,11 +3101,11 @@ return [
                 'validation' => 'strict'
             ],
             'plugins.markdown-notices' => [
+                'type' => '_root',
+                'form_field' => false,
                 'form' => [
                     'validation' => 'strict'
-                ],
-                'type' => '_root',
-                'form_field' => false
+                ]
             ],
             'plugins.markdown-notices.enabled' => [
                 'type' => 'toggle',
@@ -3228,6 +3298,7 @@ return [
                 'media' => [
                     'upload_limit' => 'system.media.upload_limit',
                     'enable_media_timestamp' => 'system.media.enable_media_timestamp',
+                    'auto_metadata_exif' => 'system.media.auto_metadata_exif',
                     'allowed_fallback_types' => 'system.media.allowed_fallback_types',
                     'unsupported_inline_types' => 'system.media.unsupported_inline_types'
                 ],
@@ -3312,6 +3383,10 @@ return [
                     ],
                     'theme' => 'plugins.admin.theme',
                     'edit_mode' => 'plugins.admin.edit_mode',
+                    'frontend_pages_target' => 'plugins.admin.frontend_pages_target',
+                    'pages' => [
+                        'show_parents' => 'plugins.admin.pages.show_parents'
+                    ],
                     'google_fonts' => 'plugins.admin.google_fonts',
                     'show_beta_msg' => 'plugins.admin.show_beta_msg',
                     'show_github_msg' => 'plugins.admin.show_github_msg',
@@ -3322,6 +3397,8 @@ return [
                     'warnings' => [
                         'delete_page' => 'plugins.admin.warnings.delete_page'
                     ],
+                    'hide_page_types' => 'plugins.admin.hide_page_types',
+                    'hide_modular_page_types' => 'plugins.admin.hide_modular_page_types',
                     'Dashboard' => 'plugins.admin.Dashboard',
                     'widgets' => [
                         'dashboard-maintenance' => 'plugins.admin.widgets.dashboard-maintenance',
@@ -3402,7 +3479,8 @@ return [
                 ],
                 'langswitcher' => [
                     'enabled' => 'plugins.langswitcher.enabled',
-                    'built_in_css' => 'plugins.langswitcher.built_in_css'
+                    'built_in_css' => 'plugins.langswitcher.built_in_css',
+                    'untranslated_pages_behavior' => 'plugins.langswitcher.untranslated_pages_behavior'
                 ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',

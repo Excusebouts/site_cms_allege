@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/system/blueprints/config/system.yaml',
-    'modified' => 1493026482,
+    'modified' => 1500724167,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -999,7 +999,6 @@ return [
                             'append' => '%',
                             'label' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY',
                             'help' => 'PLUGIN_ADMIN.DEFAULT_IMAGE_QUALITY_HELP',
-                            'classes' => 'x-small',
                             'validate' => [
                                 'min' => 1,
                                 'max' => 100
@@ -1069,6 +1068,19 @@ return [
                             'type' => 'toggle',
                             'label' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP',
                             'help' => 'PLUGIN_ADMIN.ENABLE_MEDIA_TIMESTAMP_HELP',
+                            'highlight' => 0,
+                            'options' => [
+                                1 => 'PLUGIN_ADMIN.YES',
+                                0 => 'PLUGIN_ADMIN.NO'
+                            ],
+                            'validate' => [
+                                'type' => 'bool'
+                            ]
+                        ],
+                        'media.auto_metadata_exif' => [
+                            'type' => 'toggle',
+                            'label' => 'PLUGIN_ADMIN.ENABLE_AUTO_METADATA',
+                            'help' => 'PLUGIN_ADMIN.ENABLE_AUTO_METADATA_HELP',
                             'highlight' => 0,
                             'options' => [
                                 1 => 'PLUGIN_ADMIN.YES',

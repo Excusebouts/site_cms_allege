@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/grav-admin/user/plugins/admin/blueprints/admin/pages/modular_new.yaml',
-    'modified' => 1493026482,
+    'modified' => 1500724202,
     'data' => [
         'rules' => [
             'slug' => [
@@ -47,7 +47,7 @@ return [
                     'label' => 'PLUGIN_ADMIN.MODULAR_TEMPLATE',
                     'help' => 'PLUGIN_ADMIN.PAGE_FILE_HELP',
                     'default' => 'default',
-                    'data-options@' => '\\Grav\\Common\\Page\\Pages::modularTypes',
+                    'data-options@' => '\\Grav\\Plugin\\AdminPlugin::pagesModularTypes',
                     'validate' => [
                         'required' => true
                     ]

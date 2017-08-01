@@ -30,42 +30,11 @@ class __TwigTemplate_da77fe17c23fc0a0d5e444292a21c40e392ed34e7a1dcb194f1b411600d
         echo $this->getAttribute(($context["header"] ?? null), "texte_contact", array());
         echo "</p>
         <div class=\"regularform\">
-          <div class=\"done\">
-            <div class=\"alert alert-success\">
-              <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-              Votre message a bien été envoyé. Merci.
-            </div>
-          </div>
-          <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"text-left\">
-            <input name=\"first_name\" type=\"text\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Prénom *\">
-            <input name=\"last_name\" type=\"text\" class=\"col-sm-12 col-md-6\" placeholder=\"Nom *\">
-
-            <input name=\"tel\" type=\"email\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Téléphone *\">
-            <input name=\"email\" type=\"email\" class=\"col-sm-12 col-md-6\" placeholder=\"Addresse email *\">
-
-            <div class=\"col-sm-4 col-xs-12 gender\">
-              Sexe
-            </div>
-            <div class=\"col-sm-4 col-xs-6 gender\">
-              <label>
-                <input type=\"radio\" name=\"sexe\" value=\"male\"> Homme
-              </label>
-            </div>
-            <div class=\"col-sm-4 col-xs-6 gender\">
-              <label>
-                <input type=\"radio\" name=\"sexe\" value=\"female\"> Femme
-              </label>
-            </div>
-
-            <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
-            <div class=\"col-md-12\" style=\"text-align:center;\">
-              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"";
-        // line 38
-        echo $this->getAttribute(($context["header"] ?? null), "bouton_contact", array());
-        echo "\">
-            </div>
-          </form>
-        </div>
+          ";
+        // line 9
+        $this->loadTemplate("forms/form.html.twig", "modular/contact_bloc.html.twig", 9)->display(array_merge($context, array("form" => call_user_func_array($this->env->getFunction('forms')->getCallable(), array("contact-form")))));
+        // line 10
+        echo "        </div>
       </div>
     </div>
   </div>
@@ -84,7 +53,7 @@ class __TwigTemplate_da77fe17c23fc0a0d5e444292a21c40e392ed34e7a1dcb194f1b411600d
 
     public function getDebugInfo()
     {
-        return array (  64 => 38,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  37 => 10,  35 => 9,  30 => 7,  25 => 5,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -105,38 +74,7 @@ class __TwigTemplate_da77fe17c23fc0a0d5e444292a21c40e392ed34e7a1dcb194f1b411600d
         <hr class=\"primary\">
         <p>{{ header.texte_contact }}</p>
         <div class=\"regularform\">
-          <div class=\"done\">
-            <div class=\"alert alert-success\">
-              <button type=\"button\" class=\"close\" data-dismiss=\"alert\">×</button>
-              Votre message a bien été envoyé. Merci.
-            </div>
-          </div>
-          <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"text-left\">
-            <input name=\"first_name\" type=\"text\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Prénom *\">
-            <input name=\"last_name\" type=\"text\" class=\"col-sm-12 col-md-6\" placeholder=\"Nom *\">
-
-            <input name=\"tel\" type=\"email\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Téléphone *\">
-            <input name=\"email\" type=\"email\" class=\"col-sm-12 col-md-6\" placeholder=\"Addresse email *\">
-
-            <div class=\"col-sm-4 col-xs-12 gender\">
-              Sexe
-            </div>
-            <div class=\"col-sm-4 col-xs-6 gender\">
-              <label>
-                <input type=\"radio\" name=\"sexe\" value=\"male\"> Homme
-              </label>
-            </div>
-            <div class=\"col-sm-4 col-xs-6 gender\">
-              <label>
-                <input type=\"radio\" name=\"sexe\" value=\"female\"> Femme
-              </label>
-            </div>
-
-            <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
-            <div class=\"col-md-12\" style=\"text-align:center;\">
-              <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"{{ header.bouton_contact }}\">
-            </div>
-          </form>
+          {% include \"forms/form.html.twig\" with {form: forms('contact-form')} %}
         </div>
       </div>
     </div>

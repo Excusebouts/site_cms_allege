@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1500724319,
-    'checksum' => '4c42f6aaf5cd886fa67c7d1b07a8f0e0',
+    'timestamp' => 1501426018,
+    'checksum' => '69552c73e2d25d9899617f884eb0f71f',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1495819166
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1501409539
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1500724319
+                'modified' => 1501426017
             ]
         ],
         'system/config' => [
@@ -87,25 +91,25 @@ return [
         'plugins' => [
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
+                'from' => 'c.vibey@alltech.fr',
                 'from_name' => NULL,
-                'to' => NULL,
+                'to' => 'cedric.vibey@gmail.com',
                 'to_name' => NULL,
                 'mailer' => [
-                    'engine' => 'mail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
-                        'port' => 25,
-                        'encryption' => 'none',
-                        'user' => '',
-                        'password' => ''
+                        'server' => 'ssl0.ovh.net',
+                        'port' => 465,
+                        'encryption' => 'ssl',
+                        'user' => 'c.vibey@alltech.fr',
+                        'password' => 'cedricpass!pass'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => true
             ],
             'devtools' => [
                 'enabled' => true

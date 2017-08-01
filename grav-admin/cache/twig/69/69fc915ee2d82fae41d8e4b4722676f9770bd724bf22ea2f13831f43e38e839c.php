@@ -64,32 +64,10 @@ class __TwigTemplate_ca9952e96917514a2205d0b2810626c946680be5371cd2e731e6220e449
         </div>
         <div class=\"modal-body\">
           <div class=\"regularform\" style=\"padding: 0 20px;\">
-            <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"row text-left\">
-              <input name=\"first_name\" type=\"text\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Prénom *\">
-              <input name=\"last_name\" type=\"text\" class=\"col-sm-12 col-md-6\" placeholder=\"Nom *\">
-
-              <input name=\"tel\" type=\"email\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Téléphone *\">
-              <input name=\"email\" type=\"email\" class=\"col-sm-12 col-md-6\" placeholder=\"Addresse email *\">
-
-              <div class=\"col-sm-4 col-xs-12 gender\">
-                Sexe
-              </div>
-              <div class=\"col-sm-4 col-xs-6 gender\">
-                <label>
-                  <input type=\"radio\" name=\"sexe\" value=\"male\"> Homme
-                </label>
-              </div>
-              <div class=\"col-sm-4 col-xs-6 gender\">
-                <label>
-                  <input type=\"radio\" name=\"sexe\" value=\"female\"> Femme
-                </label>
-              </div>
-
-              <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
-              <div class=\"col-md-12\" style=\"text-align:center;\">
-                <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"Envoyer\">
-              </div>
-            </form>
+           ";
+        // line 31
+        $this->loadTemplate("forms/form.html.twig", "modular/sidemenu.html.twig", 31)->display(array_merge($context, array("form" => call_user_func_array($this->env->getFunction('forms')->getCallable(), array("contactmodal-form")))));
+        echo "         
           </div>
         </div>
       </div>
@@ -109,7 +87,7 @@ class __TwigTemplate_ca9952e96917514a2205d0b2810626c946680be5371cd2e731e6220e449
 
     public function getDebugInfo()
     {
-        return array (  52 => 17,  46 => 14,  40 => 11,  34 => 8,  28 => 5,  22 => 2,  19 => 1,);
+        return array (  69 => 31,  52 => 17,  46 => 14,  40 => 11,  34 => 8,  28 => 5,  22 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -152,32 +130,7 @@ class __TwigTemplate_ca9952e96917514a2205d0b2810626c946680be5371cd2e731e6220e449
         </div>
         <div class=\"modal-body\">
           <div class=\"regularform\" style=\"padding: 0 20px;\">
-            <form method=\"post\" action=\"contact.php\" id=\"contactform\" class=\"row text-left\">
-              <input name=\"first_name\" type=\"text\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Prénom *\">
-              <input name=\"last_name\" type=\"text\" class=\"col-sm-12 col-md-6\" placeholder=\"Nom *\">
-
-              <input name=\"tel\" type=\"email\" class=\"col-sm-12 col-md-6 norightborder\" placeholder=\"Téléphone *\">
-              <input name=\"email\" type=\"email\" class=\"col-sm-12 col-md-6\" placeholder=\"Addresse email *\">
-
-              <div class=\"col-sm-4 col-xs-12 gender\">
-                Sexe
-              </div>
-              <div class=\"col-sm-4 col-xs-6 gender\">
-                <label>
-                  <input type=\"radio\" name=\"sexe\" value=\"male\"> Homme
-                </label>
-              </div>
-              <div class=\"col-sm-4 col-xs-6 gender\">
-                <label>
-                  <input type=\"radio\" name=\"sexe\" value=\"female\"> Femme
-                </label>
-              </div>
-
-              <textarea name=\"comment\" class=\"col-sm-12 col-md-12\" placeholder=\"Message *\"></textarea>
-              <div class=\"col-md-12\" style=\"text-align:center;\">
-                <input type=\"submit\" id=\"submit\" class=\"contact submit btn btn-primary btn-xl\" value=\"Envoyer\">
-              </div>
-            </form>
+           {% include \"forms/form.html.twig\" with {form: forms('contactmodal-form')} %}         
           </div>
         </div>
       </div>

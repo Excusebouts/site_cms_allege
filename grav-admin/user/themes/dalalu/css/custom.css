@@ -341,17 +341,44 @@
 
 /* Contact */
 
-.contact .gender {
+#contact-form .form-label, #contactmodal-form .form-label {
+  display: none;
+}
+
+#contact-form .gender .form-label,#contactmodal-form .gender .form-label {
+  display: inline-block;
+  margin-right: 200px;
+}
+
+#contact-form .gender .form-label .inline, #contactmodal-form .gender .form-label .inline{
+  font-weight: normal;
+}
+
+#contact-form .gender .form-data, #contactmodal-form .gender .form-data {
+  display: inline-block;
+}
+
+#contact-form .gender .radio {
+  display: inline-block;
+  margin-right: 150px;
+}
+
+#contactmodal-form .gender .radio {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+#contactmodal-form .buttons {  
+  text-align: center;
+}
+
+#contact-form .gender, #contactmodal-form .gender {
   font-family: 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
   margin: 10px 0;
 }
 
-.contact .gender input {
-  width: 32px;
-}
-
-.contact label {
-  font-weight: normal;
+#contact-form .gender .radio label, #contactmodal-form .gender .radio label {
+  font-weight: 700;
 }
 
 @media only screen and (max-width:991px) {

@@ -22,7 +22,7 @@ class __TwigTemplate_df03af5df5d8b9bb3164d643b0b4989ecad88fbc24f1aa3efdeb514204f
         <div class=\"container\">
           <div class=\"mbr-table\">
             <div class=\"mbr-table-cell\">
-              <a class=\"navbar-caption\" href=\"index.html\">
+              <a class=\"navbar-caption\" href=\"/\">
                 <img class=\"logo\" src=\"";
         // line 8
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "logo-dalalu.png", array(), "array"), "url", array());
@@ -121,7 +121,7 @@ class __TwigTemplate_df03af5df5d8b9bb3164d643b0b4989ecad88fbc24f1aa3efdeb514204f
         <div class=\"container\">
           <div class=\"mbr-table\">
             <div class=\"mbr-table-cell\">
-              <a class=\"navbar-caption\" href=\"index.html\">
+              <a class=\"navbar-caption\" href=\"/\">
                 <img class=\"logo\" src=\"{{ page.media['logo-dalalu.png'].url }}\" alt=\"\" />
               </a>
             </div>

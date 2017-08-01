@@ -90,7 +90,7 @@ form:
                   fields:
                     header.urlpage4:
                       type: text
-                      label: Url de la page 4
+                      label: Url de la page 4            
 
             header.images:
               type: pagemedia

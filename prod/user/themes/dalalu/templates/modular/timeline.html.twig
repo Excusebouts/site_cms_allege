@@ -1,0 +1,63 @@
+<section id="tline">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ header.titretimeline }}</h2>
+      </div>
+    </div>
+  </div>
+  <br/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="tline-holder" id="tline-ul">
+          <!-- /tline-->
+          <li class="tline-start">
+            <div class="tline-start-content">
+              <div class="btn btn-primary bgn-xl zoomIn disabled" id="timeline-button-less" style="margin-top: 0; margin-bottom: 30px;">{{ header.boutonhaut }}</div>
+              <div class="tline-start-icon">
+              </div>
+            </div>
+          </li>
+
+          {% for item in header.list %}       
+            {% if item.direction == 1 %}
+              {% if item.cache == 1 %}
+                <li class="tline-item tline-item-left fadeInLeft item-hidden">
+              {% else %}
+                <li class="tline-item tline-item-left fadeInLeft">
+              {% endif %}
+            {% else %}
+              {% if item.cache == 1 %}
+                <li class="tline-item tline-item-right fadeInRight item-hidden">
+              {% else %}
+                <li class="tline-item tline-item-right fadeInRight">
+              {% endif %}
+            {% endif %}
+              <div class="tline-item-content">
+                <div class="date-icon fa fa-{{ item.pictogramme }}">
+                </div>
+                <div class="tline-item-txt text-right">
+                  <div class="meta">
+                    {{ item.date }}
+                  </div>
+                  <h3>{{ item.titre }}</h3>
+                  <p>
+                    {{ item.texte }}
+                  </p>
+                </div>
+              </div>
+            </li>
+          {% endfor %}             
+          <li class="tline-start">
+            <div class="tline-start-content">
+              <div class="tline-start-icon">
+              </div>
+              <div class="btn btn-primary bgn-xl zoomIn" id="timeline-button-more">{{ header.boutonbas }}</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

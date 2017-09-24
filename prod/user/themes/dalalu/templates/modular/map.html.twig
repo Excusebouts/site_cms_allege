@@ -1,0 +1,30 @@
+{% if header.grande_carte == 1 %}
+<section style="padding: 0;">
+  <div class="container" style="max-width: 100%; padding: 0; margin: 0 auto; width: 100%;">
+{% else %}
+<section>
+  <div class="container">
+{% endif %}  
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section-heading">{{ header.titre_map }}</h2>
+        <hr class="primary">
+      </div>
+    </div>
+    <div class="row">
+      {% if header.grande_carte == 1 %}
+      <div class="col-md-12">
+        <div id="carte-page2" class="map space-set">
+      {% else %}
+      <div class="col-md-6">
+        <div id="carte-page1" class="map space-set">
+      {% endif %}
+          <p>La map ne peut s'afficher sans connexion internet</p>
+        </div>
+      </div>
+      {% if header.grande_carte != 1 %}
+      <div class="col-md-6">{{ header.texte_map }}</div>
+      {% endif %}
+    </div>
+  </div>
+</section>

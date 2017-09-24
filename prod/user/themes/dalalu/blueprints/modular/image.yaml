@@ -1,0 +1,21 @@
+title: Slider images
+
+'@extends':
+    type: default
+    context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:          
+          fields:  
+            content:
+              unset@: true
+
+            uploads:
+              unset@: true
+
+            header.images:
+              type: pagemedia
+              label: Image du slider

@@ -1,0 +1,83 @@
+<section class="bg-dark footer-block">
+  <div class="container">
+    <footer>
+      <div class="container-fluid">
+        <div class="footer" id="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-md-8">
+                <div class="row">
+                  <div class="col-xs-4">                   
+                    <ul class="list-unstyled">   
+                      {% for list_gauche in header.list_gauche %}
+                        <li class="">
+                           <a href="{{list_gauche.url}}">{{ list_gauche.text }}</a>
+                        </li>
+                      {% endfor %}                  
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <ul class="list-unstyled">
+                      {% for list_droite in header.list_droite %}
+                        <li class="">
+                           <a href="{{list_droite.url}}">{{ list_droite.text }}</a>
+                        </li>
+                      {% endfor %}    
+                    </ul>
+                  </div>
+                  <div class="col-xs-4">
+                    <div id="footer__contacts">
+                      <address>
+                        <h5 class="footer-title">
+                          <strong>{{ header.nomsociete }}</strong>
+                        </h5>
+                      </address>
+                      <address id="footer__contacts__address">{{ header.adressesociete }}
+                      </address> 
+                      <address id="footer__contacts__phone">{{ header.telephonesociete }}
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-4 carte_reseau">
+                <h1 class="out">{{ header.bouton_texte }}</h1>
+                <a href="{{ header.bouton_url }}"><img src="{{ page.media['map-pointer.png'].url }}" alt="localisation des franchises DAL'ALU" width="50" height="40" style="margin-right: 10px;"></a>
+                <a class="btn btn-primary" href="{{ header.bouton_url }}" role="button">{{ header.bouton_texte }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="legal">
+        <div class="footer-bottom">
+          <div class="container-fluid pied">
+            <div class="row">
+              <div class="col-xs-12">
+                <address id="footer__contacts__raison">
+                  {{ header.raisonsocialsociete }}
+                  <br>
+                  <br>
+                  {{ header.creditphoto }}
+                </address>
+              </div>
+              <div class="col-xs-8">
+                <a href="http://www.dalalu.fr">
+                  <h1 class="out">Site DAL'ALU</h1>
+                  <img src="{{ page.media['logo-dalalu.png'].url }}" alt="logo DAL'ALU" style="max-width: 100%; max-height: 40px;">
+                </a> 
+                <span class="text text-left">{{ header.copyright }}</span>
+                <br>
+              </div>
+              <div class="col-xs-4">
+                <div class="pull-right">
+                  <span class="text text-right">{{ header.conception }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </div>
+</section>

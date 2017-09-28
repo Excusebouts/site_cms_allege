@@ -33,8 +33,12 @@ form:
               collapsible: true
               fields:
                 header.encart_haut_gauche_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*                                  
                 header.encart_haut_gauche_titre: 
                   type: text
                   label: Titre 
@@ -50,8 +54,12 @@ form:
               collapsible: true
               fields:
                 header.encart_haut_milieu_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*                
                 header.encart_haut_milieu_titre: 
                   type: text
                   label: Titre 
@@ -67,8 +75,12 @@ form:
               collapsible: true
               fields:
                 header.encart_haut_droite_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*                
                 header.encart_haut_droite_titre: 
                   type: text
                   label: Titre 
@@ -84,8 +96,12 @@ form:
               collapsible: true
               fields:
                 header.encart_bas_gauche_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*                         
                 header.encart_bas_gauche_titre: 
                   type: text
                   label: Titre 
@@ -101,8 +117,12 @@ form:
               collapsible: true
               fields:
                 header.encart_bas_milieu_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*              
                 header.encart_bas_milieu_titre: 
                   type: text
                   label: Titre 
@@ -118,8 +138,12 @@ form:
               collapsible: true
               fields:
                 header.encart_bas_droite_pictogramme:
-                  type: text
-                  label: Pictogramme (http://fontawesome.io/icons/)
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service6/'
+                  limit: 1
+                  accept:
+                    - image/*                  
                 header.encart_bas_droite_titre: 
                   type: text
                   label: Titre 

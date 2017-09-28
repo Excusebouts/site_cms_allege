@@ -16,17 +16,8 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        if (($this->getAttribute(($context["header"] ?? null), "pageaccueil", array()) == 1)) {
-            // line 2
-            echo "<section class=\"bg-dark footer-block\" style=\"margin-top: -500px;\">
-";
-        } else {
-            // line 4
-            echo "<section class=\"bg-dark footer-block\">
-";
-        }
-        // line 6
-        echo "  <div class=\"container\">
+        echo "<section class=\"bg-dark footer-block\">
+  <div class=\"container\">
     <footer>
       <div class=\"container-fluid\">
         <div class=\"footer\" id=\"footer\">
@@ -37,14 +28,14 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
                   <div class=\"col-xs-4\">                   
                     <ul class=\"list-unstyled\">   
                       ";
-        // line 16
+        // line 12
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "list_gauche", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["list_gauche"]) {
-            // line 17
+            // line 13
             echo "                        <li class=\"\">
                            <a href=\"";
-            // line 18
+            // line 14
             echo $this->getAttribute($context["list_gauche"], "url", array());
             echo "\">";
             echo $this->getAttribute($context["list_gauche"], "text", array());
@@ -55,21 +46,21 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['list_gauche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 20
+        // line 16
         echo "                  
                     </ul>
                   </div>
                   <div class=\"col-xs-4\">
                     <ul class=\"list-unstyled\">
                       ";
-        // line 25
+        // line 21
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "list_droite", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["list_droite"]) {
-            // line 26
+            // line 22
             echo "                        <li class=\"\">
                            <a href=\"";
-            // line 27
+            // line 23
             echo $this->getAttribute($context["list_droite"], "url", array());
             echo "\">";
             echo $this->getAttribute($context["list_droite"], "text", array());
@@ -80,7 +71,7 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['list_droite'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
+        // line 25
         echo "    
                     </ul>
                   </div>
@@ -89,18 +80,18 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
                       <address>
                         <h5 class=\"footer-title\">
                           <strong>";
-        // line 36
+        // line 32
         echo $this->getAttribute(($context["header"] ?? null), "nomsociete", array());
         echo "</strong>
                         </h5>
                       </address>
                       <address id=\"footer__contacts__address\">";
-        // line 39
+        // line 35
         echo $this->getAttribute(($context["header"] ?? null), "adressesociete", array());
         echo "
                       </address> 
                       <address id=\"footer__contacts__phone\">";
-        // line 41
+        // line 37
         echo $this->getAttribute(($context["header"] ?? null), "telephonesociete", array());
         echo "
                       </address>
@@ -110,17 +101,17 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
               </div>
               <div class=\"col-xs-12 col-md-4 carte_reseau\">
                 <h1 class=\"out\">";
-        // line 48
+        // line 44
         echo $this->getAttribute(($context["header"] ?? null), "bouton_texte", array());
         echo "</h1>
                 <a href=\"";
-        // line 49
+        // line 45
         echo $this->getAttribute(($context["header"] ?? null), "bouton_url", array());
         echo "\"><img src=\"";
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "map-pointer.png", array(), "array"), "url", array());
         echo "\" alt=\"localisation des franchises DAL'ALU\" width=\"50\" height=\"40\" style=\"margin-right: 10px;\"></a>
                 <a class=\"btn btn-primary\" href=\"";
-        // line 50
+        // line 46
         echo $this->getAttribute(($context["header"] ?? null), "bouton_url", array());
         echo "\" role=\"button\">";
         echo $this->getAttribute(($context["header"] ?? null), "bouton_texte", array());
@@ -137,13 +128,13 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
               <div class=\"col-xs-12\">
                 <address id=\"footer__contacts__raison\">
                   ";
-        // line 62
+        // line 58
         echo $this->getAttribute(($context["header"] ?? null), "raisonsocialsociete", array());
         echo "
                   <br>
                   <br>
                   ";
-        // line 65
+        // line 61
         echo $this->getAttribute(($context["header"] ?? null), "creditphoto", array());
         echo "
                 </address>
@@ -152,12 +143,12 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
                 <a href=\"http://www.dalalu.fr\">
                   <h1 class=\"out\">Site DAL'ALU</h1>
                   <img src=\"";
-        // line 71
+        // line 67
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "logo-dalalu.png", array(), "array"), "url", array());
         echo "\" alt=\"logo DAL'ALU\" style=\"max-width: 100%; max-height: 40px;\">
                 </a> 
                 <span class=\"text text-left\">";
-        // line 73
+        // line 69
         echo $this->getAttribute(($context["header"] ?? null), "copyright", array());
         echo "</span>
                 <br>
@@ -165,7 +156,7 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
               <div class=\"col-xs-4\">
                 <div class=\"pull-right\">
                   <span class=\"text text-right\">";
-        // line 78
+        // line 74
         echo $this->getAttribute(($context["header"] ?? null), "conception", array());
         echo "</span>
                 </div>
@@ -191,7 +182,7 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
 
     public function getDebugInfo()
     {
-        return array (  169 => 78,  161 => 73,  156 => 71,  147 => 65,  141 => 62,  124 => 50,  118 => 49,  114 => 48,  104 => 41,  99 => 39,  93 => 36,  84 => 29,  73 => 27,  70 => 26,  66 => 25,  59 => 20,  48 => 18,  45 => 17,  41 => 16,  29 => 6,  25 => 4,  21 => 2,  19 => 1,);
+        return array (  160 => 74,  152 => 69,  147 => 67,  138 => 61,  132 => 58,  115 => 46,  109 => 45,  105 => 44,  95 => 37,  90 => 35,  84 => 32,  75 => 25,  64 => 23,  61 => 22,  57 => 21,  50 => 16,  39 => 14,  36 => 13,  32 => 12,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -204,11 +195,7 @@ class __TwigTemplate_a2a6fae95b85d84242cca1cfb9c25bfb8612a1f5a68f84203f42b08900e
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% if header.pageaccueil == 1 %}
-<section class=\"bg-dark footer-block\" style=\"margin-top: -500px;\">
-{% else %}
-<section class=\"bg-dark footer-block\">
-{% endif %}
+        return new Twig_Source("<section class=\"bg-dark footer-block\">
   <div class=\"container\">
     <footer>
       <div class=\"container-fluid\">

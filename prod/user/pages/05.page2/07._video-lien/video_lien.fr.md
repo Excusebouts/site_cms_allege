@@ -1,7 +1,7 @@
 ---
 title: 'Vidéo lien'
-titre: Loutre
-texte: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-url: 'https://www.youtube.com/watch?v=pW9alciJDRQ'
+titre: 'Vidéo lien'
+texte: 'Vidéo youtube'
+url: 'https://www.youtube.com/embed/pW9alciJDRQ?autoplay=1'
 ---
 

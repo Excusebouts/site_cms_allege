@@ -329,6 +329,16 @@
   color: #FFF;
 }
 
+.picto {
+  height: 42px;
+  margin-bottom: 10px;
+}
+
+/* Slider */
+
+.item blockquote {
+  font-size: 16px;
+}
 
 /* Map */
 
@@ -390,7 +400,8 @@
 /* Spacer */
 
 .spacer {
-  padding: 5em;
+  padding: 2em;
+  font-size: 18px;
   padding-bottom: 0;
 }
 
@@ -515,7 +526,9 @@
 }
 
 .photos-section p {
-  padding: 20px;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: 20px;
 }
 
 .photos-section img {

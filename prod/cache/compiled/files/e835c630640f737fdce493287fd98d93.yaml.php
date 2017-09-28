@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/services_6_modules.yaml',
-    'modified' => 1506021003,
+    'modified' => 1506269269,
     'data' => [
         'title' => 'Services avec image de fond',
         '@extends' => [
@@ -38,8 +38,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_haut_gauche_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_haut_gauche_titre' => [
                                             'type' => 'text',
@@ -59,8 +64,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_haut_milieu_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_haut_milieu_titre' => [
                                             'type' => 'text',
@@ -80,8 +90,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_haut_droite_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_haut_droite_titre' => [
                                             'type' => 'text',
@@ -101,8 +116,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_bas_gauche_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_bas_gauche_titre' => [
                                             'type' => 'text',
@@ -122,8 +142,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_bas_milieu_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_bas_milieu_titre' => [
                                             'type' => 'text',
@@ -143,8 +168,13 @@ return [
                                     'collapsible' => true,
                                     'fields' => [
                                         'header.encart_bas_droite_pictogramme' => [
-                                            'type' => 'text',
-                                            'label' => 'Pictogramme (http://fontawesome.io/icons/)'
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service6/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
                                         ],
                                         'header.encart_bas_droite_titre' => [
                                             'type' => 'text',

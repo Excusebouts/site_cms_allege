@@ -35,7 +35,7 @@ form:
                 header.encart_gauche_pictogramme:
                   type: file
                   label: Pictogramme
-                  destination: 'user/themes/dalalu/images'
+                  destination: 'user/themes/dalalu/images/service3/'
                   limit: 1
                   accept:
                     - image/*                 
@@ -55,7 +55,14 @@ form:
               text: Encart qui se trouve au milieu
               collapsed: false
               collapsible: true
-              fields:                
+              fields:      
+                header.encart_milieu_pictogramme:
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service3/'
+                  limit: 1
+                  accept:
+                    - image/*           
                 header.encart_milieu_titre: 
                   type: text
                   label: Titre 
@@ -73,6 +80,13 @@ form:
               collapsed: false
               collapsible: true
               fields:                
+                header.encart_droite_pictogramme:
+                  type: file
+                  label: Pictogramme
+                  destination: 'user/themes/dalalu/images/service3/'
+                  limit: 1
+                  accept:
+                    - image/*  
                 header.encart_droite_titre: 
                   type: text
                   label: Titre 

@@ -19,7 +19,7 @@ class __TwigTemplate_5142df315acac44523c3afffc1ef2e118d79c067365da7943b34a48329e
         echo "<section id=\"photos-zone\" class=\"photos-section\" style=\"padding-top: 60px;\">
     <div class=\"container\" style=\"max-width: 100%; padding: 0; margin: 0 auto; width: 100%;\">
       <div class=\"row\">
-        <div class=\"col-md-6 text-center left-img\" style=\"overflow: hidden\">
+        <div class=\"col-md-6 left-img\" style=\"overflow: hidden\">
           <img src=\"";
         // line 5
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute(($context["header"] ?? null), "image_gauche", array()), array(), "array"), "url", array());
@@ -31,7 +31,7 @@ class __TwigTemplate_5142df315acac44523c3afffc1ef2e118d79c067365da7943b34a48329e
         echo "
           </p>
         </div>
-        <div class=\"col-md-6 text-center right-img\" style=\"overflow: hidden\">
+        <div class=\"col-md-6 right-img\" style=\"overflow: hidden\">
           <img src=\"";
         // line 11
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), $this->getAttribute(($context["header"] ?? null), "image_droite", array()), array(), "array"), "url", array());
@@ -76,13 +76,13 @@ class __TwigTemplate_5142df315acac44523c3afffc1ef2e118d79c067365da7943b34a48329e
         return new Twig_Source("<section id=\"photos-zone\" class=\"photos-section\" style=\"padding-top: 60px;\">
     <div class=\"container\" style=\"max-width: 100%; padding: 0; margin: 0 auto; width: 100%;\">
       <div class=\"row\">
-        <div class=\"col-md-6 text-center left-img\" style=\"overflow: hidden\">
+        <div class=\"col-md-6 left-img\" style=\"overflow: hidden\">
           <img src=\"{{ page.media[header.image_gauche].url }}\" />
           <p>
             {{ header.texte_gauche }}
           </p>
         </div>
-        <div class=\"col-md-6 text-center right-img\" style=\"overflow: hidden\">
+        <div class=\"col-md-6 right-img\" style=\"overflow: hidden\">
           <img src=\"{{ page.media[header.image_droite].url }}\" />
           <p>
             {{ header.texte_droite }}

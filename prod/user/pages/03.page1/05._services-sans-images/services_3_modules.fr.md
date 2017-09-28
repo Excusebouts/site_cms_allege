@@ -9,11 +9,23 @@ encart_droite_titre: 'Clean Code'
 encart_droite_texte: "La garantie qualité de nos produits </br>\r\nFort de son expérience industrielle depuis plusieurs décennies, DAL’ALU s’engage par la traçabilité </br>\r\nde ses produits. DAL’ALU garantit* 30 ans </br>\r\nla qualité de l’aluminium utilisé pour l’ensemble de ses gammes de produits."
 encart_droite_texte_cache: 'Lorem ipsum dolor sit amet'
 encart_gauche_pictogramme:
-    user/themes/dalalu/images/picto.png:
+    user/themes/dalalu/images/service3/picto.png:
         name: picto.png
         type: image/png
         size: 1265
-        path: user/themes/dalalu/images/picto.png
+        path: user/themes/dalalu/images/service3/picto.png
+encart_milieu_pictogramme:
+    user/themes/dalalu/images/service3/maison.png:
+        name: maison.png
+        type: image/png
+        size: 2437
+        path: user/themes/dalalu/images/service3/maison.png
 titreservices: test
+encart_droite_pictogramme:
+    user/themes/dalalu/images/service3/brouette.png:
+        name: brouette.png
+        type: image/png
+        size: 2352
+        path: user/themes/dalalu/images/service3/brouette.png
 ---
 

@@ -1,4 +1,5 @@
-<section id="services-1" class="services-section section-space-padding" style="background-image: url({{ page.media.images[0].url }})">
+{% set image = page.media.images|first %}
+<section id="services-1" class="services-section section-space-padding" style="background-image: url({{ image.url }})">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -9,7 +10,7 @@
       <div class="col-md-4 col-sm-6">
         <div class="services-detail">
           {% for image in header.encart_gauche_pictogramme %}
-            <img class="services" src="{{ image.path }}" />
+            <img class="picto" src="{{ image.path }}" />
           {% endfor %}      
           <h3>{{ header.encart_gauche_titre }}</h3>
           <hr>
@@ -20,7 +21,9 @@
 
       <div class="col-md-4 col-sm-6">
         <div class="services-detail">
-          <i class="fa fa-{{ header.encart_milieu_pictogramme }} color-2"></i>
+          {% for image in header.encart_milieu_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+          {% endfor %}      
           <h3>{{ header.encart_milieu_titre }}</h3>
           <hr>
           <p>{{ header.encart_milieu_texte }}</p>
@@ -30,7 +33,9 @@
 
       <div class="col-md-4 col-sm-6">
         <div class="services-detail">
-          <i class="fa fa-{{ header.encart_droite_pictogramme }} color-3"></i>
+          {% for image in header.encart_droite_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+          {% endfor %}      
           <h3>{{ header.encart_droite_titre }}</h3>
           <hr>
           <p>{{ header.encart_droite_texte }}</p>

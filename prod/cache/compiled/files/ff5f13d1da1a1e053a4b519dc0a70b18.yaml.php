@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/services_3_modules.yaml',
-    'modified' => 1506180387,
+    'modified' => 1506269370,
     'data' => [
         'title' => 'Services',
         '@extends' => [
@@ -40,7 +40,7 @@ return [
                                         'header.encart_gauche_pictogramme' => [
                                             'type' => 'file',
                                             'label' => 'Pictogramme',
-                                            'destination' => 'user/themes/dalalu/images',
+                                            'destination' => 'user/themes/dalalu/images/service3/',
                                             'limit' => 1,
                                             'accept' => [
                                                 0 => 'image/*'
@@ -67,6 +67,15 @@ return [
                                     'collapsed' => false,
                                     'collapsible' => true,
                                     'fields' => [
+                                        'header.encart_milieu_pictogramme' => [
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service3/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
+                                        ],
                                         'header.encart_milieu_titre' => [
                                             'type' => 'text',
                                             'label' => 'Titre'
@@ -88,6 +97,15 @@ return [
                                     'collapsed' => false,
                                     'collapsible' => true,
                                     'fields' => [
+                                        'header.encart_droite_pictogramme' => [
+                                            'type' => 'file',
+                                            'label' => 'Pictogramme',
+                                            'destination' => 'user/themes/dalalu/images/service3/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
+                                        ],
                                         'header.encart_droite_titre' => [
                                             'type' => 'text',
                                             'label' => 'Titre'

@@ -1,7 +1,0 @@
-first_name: Cédric
-last_name: Vibey
-tel: 062214790
-email: ced.vib.33@hotmail.fr
-Sexe: option1
-message: Blalalalalala
-

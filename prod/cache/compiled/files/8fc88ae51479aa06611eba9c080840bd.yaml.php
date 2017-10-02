@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/config/plugins/email.yaml',
-    'modified' => 1506020644,
+    'modified' => 1506634563,
     'data' => [
         'enabled' => true,
         'from' => 'c.vibey@alltech.fr',

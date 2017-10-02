@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/devtools/blueprints.yaml',
-    'modified' => 1506020896,
+    'modified' => 1506971410,
     'data' => [
         'name' => 'DevTools',
-        'version' => '1.0.5',
+        'version' => '1.0.6',
         'description' => 'Plugin and Theme scaffolding utilities',
         'icon' => 'cogs',
         'author' => [

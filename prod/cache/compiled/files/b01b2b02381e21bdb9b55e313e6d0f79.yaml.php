@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints.yaml',
-    'modified' => 1506021000,
+    'modified' => 1506634563,
     'data' => [
         'name' => 'Dalalu',
         'version' => '0.1.0',

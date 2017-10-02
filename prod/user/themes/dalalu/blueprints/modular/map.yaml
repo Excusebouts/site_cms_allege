@@ -35,3 +35,24 @@ form:
               type: textarea              
               style: vertical  
               label: Texte à côté de la carte
+
+            header.liste_adresses:
+              name: liens
+              type: list
+              style: vertical
+              label: Liste des adresses de la carte
+              fields:
+                .adresse:
+                  type: text
+                  label: Adresse
+                .image:
+                  type: file
+                  label: Image
+                  destination: 'user/themes/dalalu/images/map/'
+                  limit: 1
+                  accept:
+                    - image/*     
+                .texte:
+                  type: text
+                  label: Texte
+                     

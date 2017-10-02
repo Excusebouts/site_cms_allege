@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/login/blueprints.yaml',
-    'modified' => 1506173140,
+    'modified' => 1506971408,
     'data' => [
         'name' => 'Login',
-        'version' => '2.4.1',
+        'version' => '2.4.2',
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
         'author' => [

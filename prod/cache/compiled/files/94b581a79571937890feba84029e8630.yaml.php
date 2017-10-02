@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/admin/blueprints.yaml',
-    'modified' => 1506173133,
+    'modified' => 1506971396,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.6.0',
+        'version' => '1.6.2',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [

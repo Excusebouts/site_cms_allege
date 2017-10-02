@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/email/blueprints.yaml',
-    'modified' => 1506173137,
+    'modified' => 1506971404,
     'data' => [
         'name' => 'Email',
-        'version' => '2.6.1',
+        'version' => '2.6.2',
         'description' => 'Enables the emailing system for Grav',
         'icon' => 'envelope',
         'author' => [

@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/form/blueprints.yaml',
-    'modified' => 1506173144,
+    'modified' => 1506971401,
     'data' => [
         'name' => 'Form',
-        'version' => '2.9.1',
+        'version' => '2.9.2',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [

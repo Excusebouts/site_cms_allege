@@ -1,0 +1,16 @@
+1507576467
+a:2:{s:7:"content";s:607:"<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 text-center">
+        <h2 class="section-heading" style="padding-top:60px;">Loutre</h2>
+        <p>Une loutre qui nous montre son beau caillou !</p>
+      </div>
+      <div class="col-md-6 col-sm-12 text-center">
+                <video width="480" height="272" controls>
+          <source src="/cms_dalalu/site_cms_allege/prod/user/pages/05.page2/06._video-uploade/loutre_caillou.mp4"> Votre navigateur ne supporte pas la vidéo            
+        </video>
+            </div>     
+    </div>
+  </div>
+</section>";s:12:"content_meta";N;}

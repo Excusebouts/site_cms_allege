@@ -28,3 +28,17 @@
     </div>
   </div>
 </section>
+<script type="application/javascript">
+var markerMaps = [];
+var image = "";
+{% for point in header.liste_adresses %}
+{% for image in point.image %}
+image = "<img border='0' style='margin: 0px 10px 0 0' width='50px' align='left' src='{{ image.path }}'/>"
+{% endfor %}
+markerMaps.push({
+  address: "{{ point.adresse }}",
+  html: image + "<div width='80px' >{{ point.texte }}</div>"
+});
+image = "";
+{% endfor %}
+</script>

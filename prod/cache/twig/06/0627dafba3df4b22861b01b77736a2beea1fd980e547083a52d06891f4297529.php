@@ -61,11 +61,28 @@ class __TwigTemplate_71528ee3c9e24c329f479e045558f521527ec3a5f56891b3c5be4c05681
         if (($this->getAttribute(($context["header"] ?? null), "grande_carte", array()) != 1)) {
             // line 26
             echo "      <div class=\"col-md-6\">";
-            echo $this->getAttribute(($context["header"] ?? null), "texte_map", array());
+            echo $this->getAttribute(($context["header"] ?? null), "texte", array());
             echo "</div>
+      <div class=\"col-md-6\">
+        ";
+            // line 28
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "image", array()));
+            foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
+                // line 29
+                echo "        <img class='map-image' src='";
+                echo $this->getAttribute($context["img"], "path", array());
+                echo "'/>
+        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 31
+            echo "      </div>
       ";
         }
-        // line 28
+        // line 33
         echo "    </div>
   </div>
 </section>
@@ -73,15 +90,15 @@ class __TwigTemplate_71528ee3c9e24c329f479e045558f521527ec3a5f56891b3c5be4c05681
 var markerMaps = [];
 var image = \"\";
 ";
-        // line 34
+        // line 39
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "liste_adresses", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["point"]) {
-            // line 35
+            // line 40
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($context["point"], "image", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 36
+                // line 41
                 echo "image = \"<img border='0' style='margin: 0px 10px 0 0' width='50px' align='left' src='";
                 echo $this->getAttribute($context["image"], "path", array());
                 echo "'/>\"
@@ -90,14 +107,14 @@ var image = \"\";
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 38
+            // line 43
             echo "markerMaps.push({
   address: \"";
-            // line 39
+            // line 44
             echo $this->getAttribute($context["point"], "adresse", array());
             echo "\",
   html: image + \"<div width='80px' >";
-            // line 40
+            // line 45
             echo $this->getAttribute($context["point"], "texte", array());
             echo "</div>\"
 });
@@ -107,7 +124,7 @@ image = \"\";
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['point'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 44
+        // line 49
         echo "</script>
 ";
     }
@@ -124,7 +141,7 @@ image = \"\";
 
     public function getDebugInfo()
     {
-        return array (  111 => 44,  101 => 40,  97 => 39,  94 => 38,  85 => 36,  81 => 35,  77 => 34,  69 => 28,  63 => 26,  61 => 25,  56 => 22,  51 => 19,  46 => 16,  44 => 15,  36 => 10,  31 => 7,  26 => 5,  21 => 2,  19 => 1,);
+        return array (  128 => 49,  118 => 45,  114 => 44,  111 => 43,  102 => 41,  98 => 40,  94 => 39,  86 => 33,  82 => 31,  73 => 29,  69 => 28,  63 => 26,  61 => 25,  56 => 22,  51 => 19,  46 => 16,  44 => 15,  36 => 10,  31 => 7,  26 => 5,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -162,7 +179,12 @@ image = \"\";
         </div>
       </div>
       {% if header.grande_carte != 1 %}
-      <div class=\"col-md-6\">{{ header.texte_map }}</div>
+      <div class=\"col-md-6\">{{ header.texte }}</div>
+      <div class=\"col-md-6\">
+        {% for img in header.image %}
+        <img class='map-image' src='{{ img.path }}'/>
+        {% endfor %}
+      </div>
       {% endif %}
     </div>
   </div>

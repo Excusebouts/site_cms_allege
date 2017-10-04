@@ -53,11 +53,8 @@
         <div class="col-md-4 col-sm-6">
           <div class="services-detail">
             {% for image in header.encart_bas_milieu_pictogramme %}
-            <img class="picto" src="{{ image.path }}" />
-            {% endfor %}
-            <h3>{{ header.encart_bas_milieu_titre }}</h3>
-            <hr>
-            <p>{{ header.encart_bas_milieu_texte }}</p>
+              <center><img src="{{ image.path }}" /></center>
+            {% endfor %}          
           </div>
         </div>
         

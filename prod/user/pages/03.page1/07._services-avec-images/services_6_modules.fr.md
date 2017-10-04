@@ -9,8 +9,6 @@ encart_haut_droite_titre: L’expérience
 encart_haut_droite_texte: "> Circuit court approvisionnement\r\n> Unité de production en FRANCE / 23 000 m2 \r\n> + 4000 références \r\n> 1 Réseau porte-parole de la Marque\r\n> Des compétences partagées"
 encart_bas_gauche_titre: 'un blabla '
 encart_bas_gauche_texte: 'un blablablablablablabla'
-encart_bas_milieu_titre: 'Les +'
-encart_bas_milieu_texte: "> 1 accompagnement Pro : Commerce,Gestion,Technique\r\n>  Un fort potentiel de développement\r\n>  Un  modèle d'entreprise évolutif\r\n>  Fabrication française / Garantie 30 ans"
 encart_bas_droite_titre: 'Le réseau'
 encart_bas_droite_texte: "> 150 entrepreneurs nous font confiance\r\n> + de 450 véhicules-atelier\r\n> Chiffre d’affaire réseau / 50 millions d’€"
 encart_haut_gauche_pictogramme:
@@ -49,5 +47,7 @@ encart_bas_droite_pictogramme:
         type: image/png
         size: 2352
         path: user/themes/dalalu/images/service6/brouette.png
+encart_bas_milieu_titre: 'Les +'
+encart_bas_milieu_texte: "> 1 accompagnement Pro : Commerce,Gestion,Technique\r\n>  Un fort potentiel de développement\r\n>  Un  modèle d'entreprise évolutif\r\n>  Fabrication française / Garantie 30 ans"
 ---
 

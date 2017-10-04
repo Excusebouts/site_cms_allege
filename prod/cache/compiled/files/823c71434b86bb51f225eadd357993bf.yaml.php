@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/map.yaml',
-    'modified' => 1506976837,
+    'modified' => 1507145201,
     'data' => [
         'title' => 'Map',
         '@extends' => [
@@ -39,9 +39,26 @@ return [
                                     ]
                                 ],
                                 'header.texte_map' => [
-                                    'type' => 'textarea',
-                                    'style' => 'vertical',
-                                    'label' => 'Texte à côté de la carte'
+                                    'type' => 'fieldset',
+                                    'title' => 'Texte et image à côté de la carte',
+                                    'collapsed' => false,
+                                    'collapsible' => false,
+                                    'fields' => [
+                                        'header.texte' => [
+                                            'type' => 'textarea',
+                                            'style' => 'vertical',
+                                            'label' => 'Texte'
+                                        ],
+                                        'header.image' => [
+                                            'type' => 'file',
+                                            'label' => 'Image',
+                                            'destination' => 'user/themes/dalalu/images/map/',
+                                            'limit' => 1,
+                                            'accept' => [
+                                                0 => 'image/*'
+                                            ]
+                                        ]
+                                    ]
                                 ],
                                 'header.liste_adresses' => [
                                     'name' => 'liens',

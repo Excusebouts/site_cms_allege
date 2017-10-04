@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/services_6_modules.yaml',
-    'modified' => 1506269269,
+    'modified' => 1507148923,
     'data' => [
         'title' => 'Services avec image de fond',
         '@extends' => [
@@ -143,20 +143,12 @@ return [
                                     'fields' => [
                                         'header.encart_bas_milieu_pictogramme' => [
                                             'type' => 'file',
-                                            'label' => 'Pictogramme',
+                                            'label' => 'Image',
                                             'destination' => 'user/themes/dalalu/images/service6/',
                                             'limit' => 1,
                                             'accept' => [
                                                 0 => 'image/*'
                                             ]
-                                        ],
-                                        'header.encart_bas_milieu_titre' => [
-                                            'type' => 'text',
-                                            'label' => 'Titre'
-                                        ],
-                                        'header.encart_bas_milieu_texte' => [
-                                            'type' => 'textarea',
-                                            'label' => 'Texte'
                                         ]
                                     ]
                                 ],

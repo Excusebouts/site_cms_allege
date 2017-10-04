@@ -23,7 +23,12 @@
         </div>
       </div>
       {% if header.grande_carte != 1 %}
-      <div class="col-md-6">{{ header.texte_map }}</div>
+      <div class="col-md-6">{{ header.texte }}</div>
+      <div class="col-md-6">
+        {% for img in header.image %}
+        <img class='map-image' src='{{ img.path }}'/>
+        {% endfor %}
+      </div>
       {% endif %}
     </div>
   </div>

@@ -159,23 +159,23 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_pictogramme", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
                 // line 56
-                echo "            <img class=\"picto\" src=\"";
+                echo "              <center><img src=\"";
                 echo $this->getAttribute($context["image"], "path", array());
-                echo "\" />
+                echo "\" /></center>
             ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 58
-            echo "            <h3>";
+            echo "            <!-- <h3>";
             echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_titre", array());
             echo "</h3>
             <hr>
             <p>";
             // line 60
             echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_texte", array());
-            echo "</p>
+            echo "</p> -->
           </div>
         </div>
         
@@ -297,11 +297,11 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
         <div class=\"col-md-4 col-sm-6\">
           <div class=\"services-detail\">
             {% for image in header.encart_bas_milieu_pictogramme %}
-            <img class=\"picto\" src=\"{{ image.path }}\" />
+              <center><img src=\"{{ image.path }}\" /></center>
             {% endfor %}
-            <h3>{{ header.encart_bas_milieu_titre }}</h3>
+            <!-- <h3>{{ header.encart_bas_milieu_titre }}</h3>
             <hr>
-            <p>{{ header.encart_bas_milieu_texte }}</p>
+            <p>{{ header.encart_bas_milieu_texte }}</p> -->
           </div>
         </div>
         

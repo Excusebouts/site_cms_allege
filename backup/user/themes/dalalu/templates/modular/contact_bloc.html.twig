@@ -1,0 +1,14 @@
+ <section id="contact" class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section-heading">{{ header.titre_contact }}</h2>
+        <hr class="primary">
+        <p>{{ header.texte_contact }}</p>
+        <div class="regularform">
+          {% include "forms/form.html.twig" with {form: forms('contact-form')} %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

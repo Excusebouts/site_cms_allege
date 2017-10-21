@@ -1,0 +1,40 @@
+1509193091
+a:2:{s:7:"content";s:2635:"<div id="menu-0" class="m-app">
+    <section>
+      <nav class="navbar navbar-dropdown navbar-fixed-top">
+        <div class="container">
+          <div class="mbr-table">
+            <div class="mbr-table-cell">
+              <a class="navbar-caption" href="/">
+                <img class="logo" src="/cms_dalalu/site_cms_allege/prod/user/pages/02.qui-sommes-nous/01._menu/logo-dalalu.png" alt="" />
+              </a>
+            </div>
+            <div class="mbr-table-cell">
+              <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                <div class="hamburger-icon"></div>
+              </button>
+              <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar" style="margin: 0;">
+                                <li class="nav-item open">
+                                  <a class="nav-link link mbr-editable-menu-item" href="qui-sommes-nous">Qui sommes nous ?</a></li>       
+                                <li class="nav-item">
+                                  <a class="nav-link link mbr-editable-menu-item" href="la-franchise-dalalu">La franchise DAL'ALU</a></li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link link dropdown-toggle mbr-editable-menu-item" href="entreprendre-avec-dalalu" data-toggle="dropdown-submenu" aria-expanded="false">Entreprendre avec DAL'ALU</a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                                      <a class="dropdown-item mbr-editable-menu-item" href="entreprendre-avec-dalalu">Esprit d'entreprendre </a>                  
+                                      <a class="dropdown-item mbr-editable-menu-item" href="entreprendre-avec-dalalu#testimonials">Carte des secteurs </a>                  
+                                      <a class="dropdown-item mbr-editable-menu-item" href="entreprendre-avec-dalalu#contact">Je postule </a>                  
+                                    </div>
+                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link link mbr-editable-menu-item" href="documentations">Documentations</a></li>
+              </ul>
+              <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                <div class="close-icon"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </div>";s:12:"content_meta";N;}

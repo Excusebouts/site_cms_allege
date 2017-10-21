@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/map.yaml',
-    'modified' => 1507145201,
+    'modified' => 1508600647,
     'data' => [
         'title' => 'Map',
         '@extends' => [
@@ -69,6 +69,20 @@ return [
                                         '.adresse' => [
                                             'type' => 'text',
                                             'label' => 'Adresse'
+                                        ],
+                                        '.latitude' => [
+                                            'type' => 'text',
+                                            'label' => 'Latitude',
+                                            'validate' => [
+                                                'required' => true
+                                            ]
+                                        ],
+                                        '.longitude' => [
+                                            'type' => 'text',
+                                            'label' => 'Longitude',
+                                            'validate' => [
+                                                'required' => true
+                                            ]
                                         ],
                                         '.image' => [
                                             'type' => 'file',

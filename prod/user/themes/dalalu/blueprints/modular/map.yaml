@@ -58,7 +58,17 @@ form:
               fields:
                 .adresse:
                   type: text
-                  label: Adresse
+                  label: Adresse                
+                .latitude:
+                  type: text
+                  label: Latitude
+                  validate:
+                    required: true
+                .longitude:
+                  type: text
+                  label: Longitude
+                  validate:
+                    required: true
                 .image:
                   type: file
                   label: Image

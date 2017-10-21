@@ -40,10 +40,12 @@ var image = "";
 {% for image in point.image %}
 image = "<img border='0' style='margin: 0px 10px 0 0' width='50px' align='left' src='{{ image.path }}'/>"
 {% endfor %}
-markerMaps.push({
-  address: "{{ point.adresse }}",
+markerMaps.push({ 
+  latitude: {{ point.latitude }},
+  longitude: {{ point.longitude }},
   html: image + "<div width='80px' >{{ point.texte }}</div>"
 });
 image = "";
 {% endfor %}
+//console.log(markerMaps);
 </script>

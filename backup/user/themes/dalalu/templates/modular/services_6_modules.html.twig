@@ -1,0 +1,75 @@
+ {% for image in page.media.images %}
+ <section id="services-2" class="services-section section-space-padding" style="background-image: url({{ image.url }})">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ header.titre_services }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class = "col-md-12 col-sm-12">
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_haut_gauche_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+            {% endfor %}              
+            <h3>{{ header.encart_haut_gauche_titre }}</h3>
+            <hr>
+            <p>{{ header.encart_haut_gauche_texte }}</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_haut_milieu_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+            {% endfor %}              
+            <h3>{{ header.encart_haut_milieu_titre }}</h3>
+            <hr>
+            <p>{{ header.encart_haut_milieu_texte }}</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_haut_droite_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+            {% endfor %}            
+            <h3>{{ header.encart_haut_droite_titre }}</h3>
+            <hr>
+            <p>{{ header.encart_haut_droite_texte }}</p>
+          </div>
+        </div>
+      </div>
+      <div class = "col-md-12 col-sm-12">
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_bas_droite_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+            {% endfor %}
+            <h3>{{ header.encart_bas_droite_titre }}</h3>
+            <hr>
+            <p>{{ header.encart_bas_droite_texte }}</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_bas_milieu_pictogramme %}
+              <center><img src="{{ image.path }}" /></center>
+            {% endfor %}          
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+            {% for image in header.encart_bas_gauche_pictogramme %}
+            <img class="picto" src="{{ image.path }}" />
+            {% endfor %}
+            <h3>{{ header.encart_bas_gauche_titre }}</h3>
+            <hr>
+            <p>{{ header.encart_bas_gauche_texte }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}

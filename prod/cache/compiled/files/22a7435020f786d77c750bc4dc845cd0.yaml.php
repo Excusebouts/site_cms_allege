@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/system/blueprints/user/account.yaml',
-    'modified' => 1506971377,
+    'modified' => 1508586611,
     'data' => [
         'title' => 'Account',
         'form' => [

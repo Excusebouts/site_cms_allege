@@ -1,0 +1,52 @@
+1509193091
+a:2:{s:7:"content";s:2648:"<section id="services-1" class="services-section section-space-padding" style="background-image: url(/cms_dalalu/site_cms_allege/prod/user/pages/02.qui-sommes-nous/04._services-sans-images/900x600 Maison aluminium DALALU.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Nos engagements</h2>
+      </div>
+    </div>
+    <div class="row hover-extend">
+      <div class="col-md-4 col-sm-6">
+        <div class="services-detail">
+                      <img class="picto" src="user/themes/dalalu/images/service3/logo-dalalu.png" />
+                
+          <h3>La créativité d’un leader </h3>
+          <hr>
+          <p>Nos différents services, commercial, communication, technique et logistique sont sur un même site.<br>
+Compétence et qualité par une réactivité forte et un circuit court de fabrication et distribution.
+<br>
+DAL'ALU est adhérent à la FFF / Fédération Française de la Franchise.<br>
+La FFF est la fédération représentative de la franchise qui, depuis sa création en 1971, met son expertise et son professionnalisme  au service de cette stratégie de développement des entreprises.</p>
+          <p class="reveal"></p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="services-detail">
+                      <img class="picto" src="user/themes/dalalu/images/service3/fabriqué en fance dalalu 2016.jpg" />
+                
+          <h3>Tous nos produits sont fabriqués en France</h3>
+          <hr>
+          <p>Les produits DAL'ALU  sont fabriqués à côté de BORDEAUX en Gironde. </br>
+Nous mettons à votre service une usine de production de 23 000 m², </br>
+Un production 100% française, du refendage des bobines qui servent à fabriquer sur chantier les produits profilés - gouttières, couvertines et joint debout- aux accessoires de pose qui complètent chaque gamme.</p>
+          <p class="reveal"></p>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="services-detail">
+                      <img class="picto" src="user/themes/dalalu/images/service3/logo 30 ans.png" />
+                
+          <h3>La garantie qualité de l'aluminium pour nos produits</h3>
+          <hr>
+          <p>Fort de son expérience industrielle depuis plusieurs décennies, DAL’ALU s’engage par la traçabilité de ses produits. <br>DAL’ALU garantit* 30 ans <br><
+la qualité de l’aluminium utilisé pour l’ensemble de ses gammes de produits.</p>
+          <p class="reveal"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+";s:12:"content_meta";N;}

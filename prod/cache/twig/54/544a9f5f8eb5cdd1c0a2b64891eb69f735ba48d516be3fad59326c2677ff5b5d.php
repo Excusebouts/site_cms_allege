@@ -167,26 +167,19 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 58
-            echo "            <!-- <h3>";
-            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_titre", array());
-            echo "</h3>
-            <hr>
-            <p>";
-            // line 60
-            echo $this->getAttribute(($context["header"] ?? null), "encart_bas_milieu_texte", array());
-            echo "</p> -->
+            // line 57
+            echo "          
           </div>
         </div>
         
         <div class=\"col-md-4 col-sm-6\">
           <div class=\"services-detail\">
             ";
-            // line 66
+            // line 63
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_pictogramme", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
-                // line 67
+                // line 64
                 echo "            <img class=\"picto\" src=\"";
                 echo $this->getAttribute($context["image"], "path", array());
                 echo "\" />
@@ -195,13 +188,13 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 69
+            // line 66
             echo "            <h3>";
             echo $this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_titre", array());
             echo "</h3>
             <hr>
             <p>";
-            // line 71
+            // line 68
             echo $this->getAttribute(($context["header"] ?? null), "encart_bas_gauche_texte", array());
             echo "</p>
           </div>
@@ -229,7 +222,7 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
 
     public function getDebugInfo()
     {
-        return array (  205 => 71,  199 => 69,  190 => 67,  186 => 66,  177 => 60,  171 => 58,  162 => 56,  158 => 55,  150 => 50,  144 => 48,  135 => 46,  131 => 45,  121 => 38,  116 => 36,  113 => 35,  104 => 34,  100 => 33,  92 => 28,  87 => 26,  84 => 25,  75 => 24,  71 => 23,  63 => 18,  58 => 16,  55 => 15,  46 => 14,  42 => 13,  32 => 6,  24 => 2,  19 => 1,);
+        return array (  198 => 68,  192 => 66,  183 => 64,  179 => 63,  171 => 57,  162 => 56,  158 => 55,  150 => 50,  144 => 48,  135 => 46,  131 => 45,  121 => 38,  116 => 36,  113 => 35,  104 => 34,  100 => 33,  92 => 28,  87 => 26,  84 => 25,  75 => 24,  71 => 23,  63 => 18,  58 => 16,  55 => 15,  46 => 14,  42 => 13,  32 => 6,  24 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -298,10 +291,7 @@ class __TwigTemplate_65bb52f7bb41b01dfeeb9e295acff9e8c3e732e37bbe133e52536b007be
           <div class=\"services-detail\">
             {% for image in header.encart_bas_milieu_pictogramme %}
               <center><img src=\"{{ image.path }}\" /></center>
-            {% endfor %}
-            <!-- <h3>{{ header.encart_bas_milieu_titre }}</h3>
-            <hr>
-            <p>{{ header.encart_bas_milieu_texte }}</p> -->
+            {% endfor %}          
           </div>
         </div>
         

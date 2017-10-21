@@ -11,14 +11,15 @@
       maptype: 'ROADMAP',
       markers: markerMaps
     });
-
+ 
     $('#carte-page2').gMap({
-      zoom: 6,
+      zoom: 5,
+      latitude: 46.52863469527167,
+      longitude: 2.43896484375,
       scrollwheel: true,
-      maptype: 'ROADMAP',
+      maptype: 'ROADMAP',    
       markers: markerMaps
     });
-
   });
 
 })(jQuery);

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/error/languages.yaml',
-    'modified' => 1506634563,
+    'modified' => 1508586970,
     'data' => [
         'en' => [
             'PLUGIN_ERROR' => [

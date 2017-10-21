@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/system/config/site.yaml',
-    'modified' => 1506971377,
+    'modified' => 1508586612,
     'data' => [
         'title' => 'Grav',
         'default_lang' => 'en',

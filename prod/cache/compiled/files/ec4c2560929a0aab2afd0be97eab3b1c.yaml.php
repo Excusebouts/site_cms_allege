@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/langswitcher/blueprints.yaml',
-    'modified' => 1506634563,
+    'modified' => 1508586982,
     'data' => [
         'name' => 'LangSwitcher',
         'version' => '1.4.0',

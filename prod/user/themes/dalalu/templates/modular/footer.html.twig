@@ -11,7 +11,7 @@
                     <ul class="list-unstyled">   
                       {% for list_gauche in header.list_gauche %}
                         <li class="">
-                           <a href="{{list_gauche.url}}">{{ list_gauche.text }}</a>
+                           <a target="_blank" href="{{list_gauche.url}}">{{ list_gauche.text }}</a>
                         </li>
                       {% endfor %}                  
                     </ul>
@@ -20,7 +20,7 @@
                     <ul class="list-unstyled">
                       {% for list_droite in header.list_droite %}
                         <li class="">
-                           <a href="{{list_droite.url}}">{{ list_droite.text }}</a>
+                           <a target="_blank" href="{{list_droite.url}}">{{ list_droite.text }}</a>
                         </li>
                       {% endfor %}    
                     </ul>
@@ -44,6 +44,23 @@
                 <h1 class="out">{{ header.bouton_texte }}</h1>
                 <a href="{{ header.bouton_url }}"><img src="{{ page.media['map-pointer.png'].url }}" alt="localisation des franchises DAL'ALU" width="50" height="40" style="margin-right: 10px;"></a>
                 <a class="btn btn-primary" href="{{ header.bouton_url }}" role="button">{{ header.bouton_texte }}</a>
+              </div>
+              <div class="col-xs-12 col-md-4 social">
+                <a target="_blank" href={{ header.facebook_url }} >
+                  {% for img in header.facebook_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
+                 <a target="_blank" href={{ header.twitter_url }} >
+                  {% for img in header.twitter_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
+                 <a target="_blank" href={{ header.youtube_url }} >
+                  {% for img in header.youtube_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
               </div>
             </div>
           </div>

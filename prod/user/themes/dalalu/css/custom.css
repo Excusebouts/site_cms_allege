@@ -578,3 +578,10 @@
   margin: 0;
   padding: 0;
 }
+
+.social img {
+  margin-top: 25px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}

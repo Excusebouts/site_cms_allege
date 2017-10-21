@@ -1,0 +1,82 @@
+1509193091
+a:2:{s:7:"content";s:3419:"  <section id="services-2" class="services-section section-space-padding" style="background-image: url(/cms_dalalu/site_cms_allege/prod/user/pages/02.qui-sommes-nous/06._services-avec-images/maison_filaire_dalalu.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Entreprendre avec DAL'ALU</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class = "col-md-12 col-sm-12">
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                        <img class="picto" src="user/themes/dalalu/images/service6/DALALU CEST ENCART 1.jpg" />
+                          
+            <h3>DAL’ALU, c’est :</h3>
+            <hr>
+            <p>> 35 ans d’expérience</br>
+> La marque emblématique d’un groupe industriel français</br>
+> La créativité d’un leader</br>
+> 1 Concept / 1 Marque </br>
+> Leader européen de l’Evacuation des eaux pluviales
+    et du profilage en continu </br>
+> Bureau d’étude et Recherche &  Développement </br></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                        <img class="picto" src="user/themes/dalalu/images/service6/LES COMPETENCES ENCART 2.jpg" />
+                          
+            <h3>Les compétences :</h3>
+            <hr>
+            <p>> Des gouttières aux couvertines, du sur-mesure sur vos chantiers</br>
+> Profilage en continu sur le chantier / sur-mesure </br>
+> 1 matériau : l’aluminium laqué </br>
+> 1 image de marque forte et reconnue</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                        <img class="picto" src="user/themes/dalalu/images/service6/L_EXPERIENCE  ENCART 3.jpg" />
+                        
+            <h3>L’expérience</h3>
+            <hr>
+            <p>> Circuit court approvisionnement</br>
+> Unité de production en FRANCE / 23 000 m² </br>
+> + 4000 références </br>
+> 1 Réseau porte-parole de la Marque </br>
+> Des compétences partagées</p>
+          </div>
+        </div>
+      </div>
+      <div class = "col-md-12 col-sm-12">
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                        <img class="picto" src="user/themes/dalalu/images/service6/le reseau  ENCART 5.jpg" />
+                        <h3>Une franchise à taille humaine</h3>
+            <hr>
+            <p>> 150 entrepreneurs nous font confiance </br>
+> + de 450 véhicules-atelier </br>
+> Chiffre d’affaire réseau / 50 millions d’€</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                          <center><img src="user/themes/dalalu/images/service6/logo-dalalu.png" /></center>
+                      
+          </div>
+        </div>
+        
+        <div class="col-md-4 col-sm-6">
+          <div class="services-detail">
+                        <img class="picto" src="user/themes/dalalu/images/service6/les plus carroussel images avec texte 2.jpg" />
+                        <h3>Nos compétences pour votre projet d’entreprise</h3>
+            <hr>
+            <p>Offrez-vous le succès, par vos compétences et notre savoir-faire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+";s:12:"content_meta";N;}

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/blueprints/modular/footer.yaml',
-    'modified' => 1506174509,
+    'modified' => 1508599105,
     'data' => [
         'title' => 'Footer',
         '@extends' => [
@@ -101,6 +101,71 @@ return [
                                                 'header.bouton_url' => [
                                                     'type' => 'text',
                                                     'label' => 'URL du bouton'
+                                                ]
+                                            ]
+                                        ]
+                                    ]
+                                ],
+                                '.reseaux_sociaux_fieldset' => [
+                                    'type' => 'fieldset',
+                                    'title' => 'Réseaux Sociaux',
+                                    'fields' => [
+                                        '.reseaux_sociaux_colonnes' => [
+                                            'type' => 'columns',
+                                            'fields' => [
+                                                '.column1' => [
+                                                    'type' => 'column',
+                                                    'fields' => [
+                                                        'header.facebook_url' => [
+                                                            'type' => 'text',
+                                                            'label' => 'Url'
+                                                        ],
+                                                        'header.facebook_picto' => [
+                                                            'type' => 'file',
+                                                            'label' => 'Image',
+                                                            'destination' => 'user/themes/dalalu/images/footer/',
+                                                            'limit' => 1,
+                                                            'accept' => [
+                                                                0 => 'image/*'
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ],
+                                                '.column2' => [
+                                                    'type' => 'column',
+                                                    'fields' => [
+                                                        'header.twitter_url' => [
+                                                            'type' => 'text',
+                                                            'label' => 'Url'
+                                                        ],
+                                                        'header.twitter_picto' => [
+                                                            'type' => 'file',
+                                                            'label' => 'Image',
+                                                            'destination' => 'user/themes/dalalu/images/footer/',
+                                                            'limit' => 1,
+                                                            'accept' => [
+                                                                0 => 'image/*'
+                                                            ]
+                                                        ]
+                                                    ]
+                                                ],
+                                                '.column3' => [
+                                                    'type' => 'column',
+                                                    'fields' => [
+                                                        'header.youtube_url' => [
+                                                            'type' => 'text',
+                                                            'label' => 'Url'
+                                                        ],
+                                                        'header.youtube_picto' => [
+                                                            'type' => 'file',
+                                                            'label' => 'Image',
+                                                            'destination' => 'user/themes/dalalu/images/footer/',
+                                                            'limit' => 1,
+                                                            'accept' => [
+                                                                0 => 'image/*'
+                                                            ]
+                                                        ]
+                                                    ]
                                                 ]
                                             ]
                                         ]

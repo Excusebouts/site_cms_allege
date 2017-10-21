@@ -1,0 +1,38 @@
+1509193091
+a:2:{s:7:"content";s:1219:"<section>
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section-heading">Nous trouver ...</h2>
+        <hr class="primary">
+      </div>
+    </div>
+    <div class="row">
+            <div class="col-md-6">
+        <div id="carte-page1" class="map space-set">
+                <p>La map ne peut s'afficher sans connexion internet</p>
+        </div>
+      </div>
+            <div class="col-md-6">DAL'ALU <br />
+rue des Girolles -  ZI LA PRADE <br />
+Saint-Médard-D'Eyrans <br />
+ T.   05 56 67 40 40 <br />
+service.conseil@dalalu.fr</div>
+      <div class="col-md-6">
+                <img class='map-image' src='user/themes/dalalu/images/map/photo siege et usine DALALU rvb.jpg'/>
+              </div>
+          </div>
+  </div>
+</section>
+<script type="application/javascript">
+var markerMaps = [];
+var image = "";
+image = "<img border='0' style='margin: 0px 10px 0 0' width='50px' align='left' src='user/themes/dalalu/images/map/logo-dalalu.png'/>"
+markerMaps.push({
+  address: "ZA La Prade - rue des Girolles, 33650 Saint-Médard-d'Eyrans",
+  html: image + "<div width='80px' >DAL'ALU / siège social</div>"
+});
+image = "";
+</script>
+";s:12:"content_meta";N;}

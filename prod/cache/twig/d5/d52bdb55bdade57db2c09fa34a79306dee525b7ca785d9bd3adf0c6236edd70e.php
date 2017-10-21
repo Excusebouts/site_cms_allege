@@ -34,7 +34,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
         foreach ($context['_seq'] as $context["_key"] => $context["list_gauche"]) {
             // line 13
             echo "                        <li class=\"\">
-                           <a href=\"";
+                           <a target=\"_blank\" href=\"";
             // line 14
             echo $this->getAttribute($context["list_gauche"], "url", array());
             echo "\">";
@@ -59,7 +59,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
         foreach ($context['_seq'] as $context["_key"] => $context["list_droite"]) {
             // line 22
             echo "                        <li class=\"\">
-                           <a href=\"";
+                           <a target=\"_blank\" href=\"";
             // line 23
             echo $this->getAttribute($context["list_droite"], "url", array());
             echo "\">";
@@ -117,6 +117,68 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
         echo $this->getAttribute(($context["header"] ?? null), "bouton_texte", array());
         echo "</a>
               </div>
+              <div class=\"col-xs-12 col-md-4 social\">
+                <a target=\"_blank\" href=";
+        // line 49
+        echo $this->getAttribute(($context["header"] ?? null), "facebook_url", array());
+        echo " >
+                  ";
+        // line 50
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "facebook_picto", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
+            // line 51
+            echo "                  <img src='";
+            echo $this->getAttribute($context["img"], "path", array());
+            echo "' />
+                  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 53
+        echo "                </a>
+                 <a target=\"_blank\" href=";
+        // line 54
+        echo $this->getAttribute(($context["header"] ?? null), "twitter_url", array());
+        echo " >
+                  ";
+        // line 55
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "twitter_picto", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
+            // line 56
+            echo "                  <img src='";
+            echo $this->getAttribute($context["img"], "path", array());
+            echo "' />
+                  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 58
+        echo "                </a>
+                 <a target=\"_blank\" href=";
+        // line 59
+        echo $this->getAttribute(($context["header"] ?? null), "youtube_url", array());
+        echo " >
+                  ";
+        // line 60
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["header"] ?? null), "youtube_picto", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
+            // line 61
+            echo "                  <img src='";
+            echo $this->getAttribute($context["img"], "path", array());
+            echo "' />
+                  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 63
+        echo "                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -128,13 +190,13 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
               <div class=\"col-xs-12\">
                 <address id=\"footer__contacts__raison\">
                   ";
-        // line 58
+        // line 75
         echo $this->getAttribute(($context["header"] ?? null), "raisonsocialsociete", array());
         echo "
                   <br>
                   <br>
                   ";
-        // line 61
+        // line 78
         echo $this->getAttribute(($context["header"] ?? null), "creditphoto", array());
         echo "
                 </address>
@@ -143,12 +205,12 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
                 <a href=\"http://www.dalalu.fr\">
                   <h1 class=\"out\">Site DAL'ALU</h1>
                   <img src=\"";
-        // line 67
+        // line 84
         echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", array()), "logo-dalalu.png", array(), "array"), "url", array());
         echo "\" alt=\"logo DAL'ALU\" style=\"max-width: 100%; max-height: 40px;\">
                 </a> 
                 <span class=\"text text-left\">";
-        // line 69
+        // line 86
         echo $this->getAttribute(($context["header"] ?? null), "copyright", array());
         echo "</span>
                 <br>
@@ -156,7 +218,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
               <div class=\"col-xs-4\">
                 <div class=\"pull-right\">
                   <span class=\"text text-right\">";
-        // line 74
+        // line 91
         echo $this->getAttribute(($context["header"] ?? null), "conception", array());
         echo "</span>
                 </div>
@@ -182,7 +244,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
 
     public function getDebugInfo()
     {
-        return array (  160 => 74,  152 => 69,  147 => 67,  138 => 61,  132 => 58,  115 => 46,  109 => 45,  105 => 44,  95 => 37,  90 => 35,  84 => 32,  75 => 25,  64 => 23,  61 => 22,  57 => 21,  50 => 16,  39 => 14,  36 => 13,  32 => 12,  19 => 1,);
+        return array (  222 => 91,  214 => 86,  209 => 84,  200 => 78,  194 => 75,  180 => 63,  171 => 61,  167 => 60,  163 => 59,  160 => 58,  151 => 56,  147 => 55,  143 => 54,  140 => 53,  131 => 51,  127 => 50,  123 => 49,  115 => 46,  109 => 45,  105 => 44,  95 => 37,  90 => 35,  84 => 32,  75 => 25,  64 => 23,  61 => 22,  57 => 21,  50 => 16,  39 => 14,  36 => 13,  32 => 12,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -208,7 +270,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
                     <ul class=\"list-unstyled\">   
                       {% for list_gauche in header.list_gauche %}
                         <li class=\"\">
-                           <a href=\"{{list_gauche.url}}\">{{ list_gauche.text }}</a>
+                           <a target=\"_blank\" href=\"{{list_gauche.url}}\">{{ list_gauche.text }}</a>
                         </li>
                       {% endfor %}                  
                     </ul>
@@ -217,7 +279,7 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
                     <ul class=\"list-unstyled\">
                       {% for list_droite in header.list_droite %}
                         <li class=\"\">
-                           <a href=\"{{list_droite.url}}\">{{ list_droite.text }}</a>
+                           <a target=\"_blank\" href=\"{{list_droite.url}}\">{{ list_droite.text }}</a>
                         </li>
                       {% endfor %}    
                     </ul>
@@ -241,6 +303,23 @@ class __TwigTemplate_89331a22e2bde7c6168af6c72378f84c3faa513497ca8bea8a476e30d74
                 <h1 class=\"out\">{{ header.bouton_texte }}</h1>
                 <a href=\"{{ header.bouton_url }}\"><img src=\"{{ page.media['map-pointer.png'].url }}\" alt=\"localisation des franchises DAL'ALU\" width=\"50\" height=\"40\" style=\"margin-right: 10px;\"></a>
                 <a class=\"btn btn-primary\" href=\"{{ header.bouton_url }}\" role=\"button\">{{ header.bouton_texte }}</a>
+              </div>
+              <div class=\"col-xs-12 col-md-4 social\">
+                <a target=\"_blank\" href={{ header.facebook_url }} >
+                  {% for img in header.facebook_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
+                 <a target=\"_blank\" href={{ header.twitter_url }} >
+                  {% for img in header.twitter_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
+                 <a target=\"_blank\" href={{ header.youtube_url }} >
+                  {% for img in header.youtube_picto %}
+                  <img src='{{ img.path }}' />
+                  {% endfor %}
+                </a>
               </div>
             </div>
           </div>

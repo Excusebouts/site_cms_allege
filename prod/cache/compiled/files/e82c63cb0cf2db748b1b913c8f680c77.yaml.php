@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/cms_dalalu/site_cms_allege/prod/user/plugins/login/login.yaml',
-    'modified' => 1506971408,
+    'modified' => 1508586983,
     'data' => [
         'enabled' => true,
         'built_in_css' => true,

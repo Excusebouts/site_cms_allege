@@ -109,12 +109,20 @@ var image = \"\";
             $context = array_intersect_key($context, $_parent) + $_parent;
             // line 43
             echo "markerMaps.push({
-  address: \"";
+  //address: \"";
             // line 44
             echo $this->getAttribute($context["point"], "adresse", array());
             echo "\",
-  html: image + \"<div width='80px' >";
+  latitude: ";
             // line 45
+            echo $this->getAttribute($context["point"], "latitude", array());
+            echo ",
+  longitude: ";
+            // line 46
+            echo $this->getAttribute($context["point"], "longitude", array());
+            echo ",
+  html: image + \"<div width='80px' >";
+            // line 47
             echo $this->getAttribute($context["point"], "texte", array());
             echo "</div>\"
 });
@@ -124,8 +132,9 @@ image = \"\";
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['point'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 49
-        echo "</script>
+        // line 51
+        echo "//console.log(markerMaps);
+</script>
 ";
     }
 
@@ -141,7 +150,7 @@ image = \"\";
 
     public function getDebugInfo()
     {
-        return array (  128 => 49,  118 => 45,  114 => 44,  111 => 43,  102 => 41,  98 => 40,  94 => 39,  86 => 33,  82 => 31,  73 => 29,  69 => 28,  63 => 26,  61 => 25,  56 => 22,  51 => 19,  46 => 16,  44 => 15,  36 => 10,  31 => 7,  26 => 5,  21 => 2,  19 => 1,);
+        return array (  136 => 51,  126 => 47,  122 => 46,  118 => 45,  114 => 44,  111 => 43,  102 => 41,  98 => 40,  94 => 39,  86 => 33,  82 => 31,  73 => 29,  69 => 28,  63 => 26,  61 => 25,  56 => 22,  51 => 19,  46 => 16,  44 => 15,  36 => 10,  31 => 7,  26 => 5,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -197,11 +206,14 @@ var image = \"\";
 image = \"<img border='0' style='margin: 0px 10px 0 0' width='50px' align='left' src='{{ image.path }}'/>\"
 {% endfor %}
 markerMaps.push({
-  address: \"{{ point.adresse }}\",
+  //address: \"{{ point.adresse }}\",
+  latitude: {{ point.latitude }},
+  longitude: {{ point.longitude }},
   html: image + \"<div width='80px' >{{ point.texte }}</div>\"
 });
 image = \"\";
 {% endfor %}
+//console.log(markerMaps);
 </script>
 ", "modular/map.html.twig", "/var/www/html/cms_dalalu/site_cms_allege/prod/user/themes/dalalu/templates/modular/map.html.twig");
     }
